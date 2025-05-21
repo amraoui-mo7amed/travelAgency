@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="أفق للسفر - وكالة سفرك الموثوقة لاستكشاف جمال الجزائر. نقدم رحلات داخلية مميزة وتجارب لا تُنسى في جنات، غرداية، تلمسان، قسنطينة، والجزائر العاصمة." />
+    <meta name="keywords"
+        content="رحلات الجزائر, وكالة سفر الجزائر, السياحة في الجزائر, جنات, غرداية, تلمسان, قسنطينة, الجزائر العاصمة, حجز رحلات, عطلات, مغامرات, سفر داخلي" />
+    <title>أفق للسفر - رحلاتك إلى جمال الجزائر</title>
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23007bff' d='M20 7.07V4h-2V2h-2v2h-2V2H10v2H8V2H6v2H4v3.07C2.79 7.55 2 8.7 2 10c0 1.3.79 2.45 2 2.93V22h2V20h2v2h2v-2h2v2h2v-2h2v2h2V12.93c1.21-.48 2-1.63 2-2.93 0-1.3-.79-2.45-2-2.93zM12 10c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM18 10c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z'/%3E%3C/svg%3E"
+        type="image/svg+xml" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCAbortf/K"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Core stylesheet -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+    <nav class="custom-navbar navbar navbar-expand-lg">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#hero">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12 6C14.7614 6 17 8.23858 17 11H19C19 7.13401 15.866 4 12 4V6ZM5 11C5 8.23858 7.23858 6 10 6V4C6.13401 4 3 7.13401 3 11H5ZM12 18C9.23858 18 7 15.7614 7 13H5C5 16.866 8.13401 20 12 20V18ZM17 13C17 15.7614 14.7614 18 12 18V20C15.866 20 19 16.866 19 13H17Z"
+                        fill="#007bff" />
+                </svg>
+                <span data-lang-key="company_name">أفق للسفر</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"
+                        style="color: var(--primary-color);"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero" data-lang-key="home_link">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-lang-key="about_link">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations" data-lang-key="destinations_link">الوجهات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-lang-key="services_link">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-choose-us" data-lang-key="why_us_link">لماذا نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials" data-lang-key="testimonials_link">آراء العملاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-lang-key="contact_link">اتصل بنا</a>
+                    </li>
+                </ul>
+                <button class="lang-switcher-btn" id="lang-switcher">En</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold animate-on-scroll" data-lang-key="hero_title">اكتشف جمال الجزائر معنا</h1>
+            <p class="lead mb-4 animate-on-scroll" data-lang-key="hero_subtitle">
+                رحلات فريدة وتجارب لا تُنسى في قلب الطبيعة الجزائرية.
+            </p>
+            <a href="#destinations" class="btn btn-primary btn-lg animate-on-scroll"
+                data-lang-key="explore_button">استكشف وجهاتنا</a>
+        </div>
+    </section>
+
+    <section id="about" class="animate-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="mb-4" data-lang-key="about_heading">من نحن</h2>
+                    <p data-lang-key="about_text">
+                        "أفق للسفر" هي وكالة سفر متخصصة في تنظيم الرحلات السياحية داخل الجزائر. نهدف إلى تقديم تجارب سفر
+                        استثنائية تمكنك من استكشاف التنوع الثقافي والطبيعي لبلدنا الرائع. من الصحاري الساحرة إلى السواحل
+                        الخلابة والجبال الشاهقة، نضمن لك رحلات آمنة وممتعة ومجهزة بكل ما تحتاجه لتصنع ذكريات لا تُنسى.
+                        نلتزم بالجودة والراحة والاهتمام بأدق التفاصيل لجعل عطلتك مثالية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-lang-key="destinations_heading">وجهاتنا المميزة</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="City with mountains" />
+                        <div class="card-body">
+                            <h3 data-lang-key="djanet_title">جانت</h3>
+                            <p data-lang-key="djanet_description">
+                                اكتشف سحر الصحراء الكبرى، المناظر الطبيعية الصخرية الفريدة، والواحات الخضراء في قلب
+                                الطاسيلي ناجر.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="Beautiful city with river" />
+                        <div class="card-body">
+                            <h3 data-lang-key="ghardaia_title">غرداية</h3>
+                            <p data-lang-key="ghardaia_description">
+                                انغمس في تاريخ وجمال منطقة المزاب، المدينة التي حافظت على تقاليدها وعمارتها الفريدة.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="Modern city skyline" />
+                        <div class="card-body">
+                            <h3 data-lang-key="tlemcen_title">تلمسان</h3>
+                            <p data-lang-key="tlemcen_description">
+                                مدينة الفن والتاريخ، بآثارها الأندلسية العريقة ومساجدها وقصورها التي تحكي قصص الماضي.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="City with bridges" />
+                        <div class="card-body">
+                            <h3 data-lang-key="constantine_title">قسنطينة</h3>
+                            <p data-lang-key="constantine_description">
+                                مدينة الجسور المعلقة، تحفة معمارية وطبيعية تجمع بين جمال الوادي العميق وروعة البناء.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="Capital city" />
+                        <div class="card-body">
+                            <h3 data-lang-key="algiers_title">الجزائر العاصمة</h3>
+                            <p data-lang-key="algiers_description">
+                                عاصمة الجزائر الساحرة، بمزيجها من العمارة الحديثة والقديمة، وكورنيشها البحري الجميل.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid" alt="Historic city" />
+                        <div class="card-body">
+                            <h3 data-lang-key="setif_title">سطيف</h3>
+                            <p data-lang-key="setif_description">
+                                مدينة الهضاب العليا، غنية بالآثار الرومانية والتاريخ العريق، ومركز اقتصادي حيوي.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-primary mt-3" data-lang-key="book_now_button">احجز
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-lang-key="services_heading">خدماتنا</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-plane-departure"></i>
+                        <h3 data-lang-key="service1_title">تنظيم الرحلات</h3>
+                        <p data-lang-key="service1_description">
+                            نقدم باقات سفر مخصصة لتناسب جميع الأذواق والميزانيات، من المغامرات إلى الاسترخاء.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-hotel"></i>
+                        <h3 data-lang-key="service2_title">حجوزات الفنادق</h3>
+                        <p data-lang-key="service2_description">
+                            نضمن لك الإقامة في أفضل الفنادق والمنتجعات التي تتناسب مع احتياجاتك في كل وجهة.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-car"></i>
+                        <h3 data-lang-key="service3_title">النقل المريح</h3>
+                        <p data-lang-key="service3_description">نوفر وسائل نقل آمنة ومريحة داخل المدن وبين الوجهات لضمان
+                            رحلة سلسة.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-person-hiking"></i>
+                        <h3 data-lang-key="service4_title">أنشطة ومغامرات</h3>
+                        <p data-lang-key="service4_description">
+                            تنظيم الأنشطة المحلية مثل الجولات الثقافية، رحلات السفاري الصحراوية، والتخييم.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3 data-lang-key="service5_title">تخطيط العطلات</h3>
+                        <p data-lang-key="service5_description">مساعدتك في التخطيط الكامل لعطلتك، من اختيار الوجهة إلى
+                            أدق التفاصيل.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-headset"></i>
+                        <h3 data-lang-key="service6_title">دعم 24/7</h3>
+                        <p data-lang-key="service6_description">
+                            فريق دعم العملاء لدينا متاح على مدار الساعة للإجابة على استفساراتك ومساعدتك.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-lang-key="why_us_heading">لماذا تختار أفق للسفر؟</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-medal"></i>
+                        <h3 data-lang-key="reason1_title">جودة لا تضاهى</h3>
+                        <p data-lang-key="reason1_description">نلتزم بأعلى معايير الجودة في كل خدمة نقدمها، لضمان رضاك
+                            التام.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-globe-africa"></i>
+                        <h3 data-lang-key="reason2_title">خبرة محلية</h3>
+                        <p data-lang-key="reason2_description">معرفتنا العميقة بالجزائر تمنحك تجارب أصيلة وفريدة من
+                            نوعها.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3 data-lang-key="reason3_title">دعم موثوق</h3>
+                        <p data-lang-key="reason3_description">فريقنا متاح دائمًا لتقديم المساعدة والدعم قبل وأثناء وبعد
+                            رحلتك.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3 data-lang-key="reason4_title">أسعار تنافسية</h3>
+                        <p data-lang-key="reason4_description">نقدم أفضل قيمة مقابل المال دون المساومة على جودة الخدمة.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <h3 data-lang-key="reason5_title">تجارب شخصية</h3>
+                        <p data-lang-key="reason5_description">نصمم كل رحلة لتناسب اهتماماتك وتفضيلاتك الشخصية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-smile"></i>
+                        <h3 data-lang-key="reason6_title">رضا العملاء</h3>
+                        <p data-lang-key="reason6_description">سعادة عملائنا هي أولويتنا القصوى، ونعمل بجد لتحقيقها.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-lang-key="testimonials_heading">ماذا يقول عملاؤنا</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p data-lang-key="testimonial1_quote">
+                            "رحلة رائعة إلى جنات! كل شيء كان منظمًا بشكل مثالي، والفريق كان متعاونًا للغاية. تجربة لا
+                            تُنسى!"
+                        </p>
+                        <div class="author" data-lang-key="testimonial1_author">سارة أحمد</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p data-lang-key="testimonial2_quote">
+                            "استمتعت كثيرًا بزيارة غرداية مع "أفق للسفر". المرشدون رائعون والخدمة ممتازة. أوصي بهم
+                            بشدة!"
+                        </p>
+                        <div class="author" data-lang-key="testimonial2_author">خالد منصور</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p data-lang-key="testimonial3_quote">
+                            "تجربة مدهشة في تلمسان! الرحلة كانت منظمة بعناية فائقة، والفنادق كانت مريحة للغاية. شكراً
+                            لكم!"
+                        </p>
+                        <div class="author" data-lang-key="testimonial3_author">فاطمة الزهراء</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-lang-key="contact_heading">اتصل بنا</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-lang-key="contact_name_label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="name" required
+                                data-lang-key="contact_name_placeholder" placeholder="اسمك الكامل" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-lang-key="contact_email_label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" required
+                                data-lang-key="contact_email_placeholder" placeholder="بريدك الإلكتروني" />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-lang-key="contact_subject_label">الموضوع</label>
+                            <input type="text" class="form-control" id="subject" required
+                                data-lang-key="contact_subject_placeholder" placeholder="موضوع الرسالة" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-lang-key="contact_message_label">رسالتك</label>
+                            <textarea class="form-control" id="message" rows="5" required
+                                data-lang-key="contact_message_placeholder" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg mt-3"
+                                data-lang-key="contact_send_button">إرسال الرسالة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p data-lang-key="footer_copyright" class="mb-0">
+                        &copy; <span id="year"></span> أفق للسفر. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7NvDlsaFVYcE/j"
+        crossorigin="anonymous"></script>
+    <!-- core script -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
