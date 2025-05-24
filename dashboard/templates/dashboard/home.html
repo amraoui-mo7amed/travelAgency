@@ -1,0 +1,468 @@
+{% extends "frontend/index.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/dash.css" %}?v={% now "U" %}" />
+{% endblock css %}
+
+{% block subtitle %}
+    {% trans "Dashboard" %}
+{% endblock subtitle %}
+
+{% block nav %}
+{% endblock nav %}
+
+{% block hero %}
+{% endblock hero %}
+
+{% block content %}
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h3>
+                {% trans "Desert Mirage" %}
+            </h3>
+        </div>
+
+        <div class="sidebar-menu">
+            <a href="#" class="menu-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>{% trans "Dashboard" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>{% trans "Bookings" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>{% trans "Tours" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-users"></i>
+                <span>{% trans "Clients" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-line"></i>
+                <span>{% trans "Analytics" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-envelope"></i>
+                <span>{% trans "Messages" %}</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-cog"></i>
+                <span>{% trans "Settings" %}</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="d-flex align-items-center">
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h1>
+                        {% trans "Dashboard" %}
+                    </h1>
+                </div>
+            </div>
+
+            <div class="user-menu">
+                <div class="notification" id="notificationBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-profile" id="accountBtn">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg"
+                         alt="{% trans 'User Profile' %}" />
+                    <div>
+                        <div class="user-name">
+                            {% trans "Sarah Johnson" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Popup -->
+            <div class="notification-popup" id="notificationPopup">
+                <div class="notification-header">
+                    <h5>
+                        {% trans "Notifications" %}
+                    </h5>
+                    <span class="mark-all-read">{% trans "Mark all as read" %}</span>
+                </div>
+
+                <div class="notification-list">
+                    <div class="notification-item notification-unread">
+                        <div class="notification-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-text">
+                                <strong>{% trans "New booking" %}</strong> {% trans "received for Sahara Expedition" %}
+                            </div>
+                            <div class="notification-time">
+                                {% trans "10 minutes ago" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item notification-unread">
+                        <div class="notification-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-text">
+                                <strong>{% trans "New review" %}</strong>: {% trans "Amazing desert experience!" %}
+                            </div>
+                            <div class="notification-time">
+                                {% trans "1 hour ago" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-text">
+                                <strong>{% trans "New inquiry" %}</strong> {% trans "from potential client" %}
+                            </div>
+                            <div class="notification-time">
+                                {% trans "3 hours ago" %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-text">
+                                <strong>{% trans "New user" %}</strong> {% trans "registered: Michael Brown" %}
+                            </div>
+                            <div class="notification-time">
+                                {% trans "1 day ago" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Popup -->
+            <div class="account-popup" id="accountPopup">
+                <div class="account-header">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg"
+                         alt="{% trans 'User Profile' %}" />
+                    <div>
+                        <div class="account-name">
+                            {% trans "Sarah Johnson" %}
+                        </div>
+                        <div class="account-email">
+                            sarah@desertmirage.com
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="account-menu">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            {% trans "My Profile" %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            {% trans "Settings" %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            {% trans "Messages" %}
+                            <span class="badge bg-primary ms-auto">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                            {% trans "My Bookings" %}
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="account-footer">
+                    <a href="{% url "user_auth:logout" %}" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        {% trans "Logout" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay for popups -->
+        <div class="popup-overlay" id="popupOverlay">
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="stats-card bookings">
+                    <div class="stats-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stats-value">
+                        24
+                    </div>
+                    <div class="stats-label">
+                        {% trans "New Bookings" %}
+                    </div>
+                    <div class="stats-change positive">
+                        <i class="fas fa-arrow-up"></i> {% trans "12% from last month" %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="stats-card revenue">
+                    <div class="stats-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stats-value">
+                        $18,450
+                    </div>
+                    <div class="stats-label">
+                        {% trans "Total Revenue" %}
+                    </div>
+                    <div class="stats-change positive">
+                        <i class="fas fa-arrow-up"></i> {% trans "8% from last month" %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="stats-card clients">
+                    <div class="stats-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stats-value">
+                        143
+                    </div>
+                    <div class="stats-label">
+                        {% trans "Active Clients" %}
+                    </div>
+                    <div class="stats-change positive">
+                        <i class="fas fa-arrow-up"></i> {% trans "5% from last month" %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="stats-card rating">
+                    <div class="stats-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stats-value">
+                        4.8
+                    </div>
+                    <div class="stats-label">
+                        {% trans "Average Rating" %}
+                    </div>
+                    <div class="stats-change negative">
+                        <i class="fas fa-arrow-down"></i> {% trans "0.1 from last month" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Recent Bookings -->
+            <div class="col-lg-8">
+                <div class="booking-card">
+                    <div class="card-header">
+                        <h5>
+                            {% trans "Recent Bookings" %}
+                        </h5>
+                        <a href="#" class="view-all">{% trans "View All" %}</a>
+                    </div>
+
+                    <div class="booking-list">
+                        <div class="booking-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="booking-info">
+                                    <img src="https://images.unsplash.com/photo-1518544866330-95a2bec01e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                         alt="{% trans 'Sahara Adventure' %}"
+                                         class="booking-img" />
+                                    <div>
+                                        <div class="booking-title">
+                                            {% trans "Sahara Desert Expedition" %}
+                                        </div>
+                                        <div class="booking-date">
+                                            {% trans "Booked on" %}: May 15, 2023 • {% trans "Departure" %}: Jun 10, 2023
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="booking-status status-confirmed">{% trans "Confirmed" %}</span>
+                            </div>
+                        </div>
+
+                        <div class="booking-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="booking-info">
+                                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                         alt="{% trans 'Wadi Rum' %}"
+                                         class="booking-img" />
+                                    <div>
+                                        <div class="booking-title">
+                                            {% trans "Wadi Rum Luxury Camp" %}
+                                        </div>
+                                        <div class="booking-date">
+                                            {% trans "Booked on" %}: May 18, 2023 • {% trans "Departure" %}: Jul 5, 2023
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="booking-status status-pending">{% trans "Pending" %}</span>
+                            </div>
+                        </div>
+
+                        <div class="booking-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="booking-info">
+                                    <img src="https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                                         alt="{% trans 'Namib Desert' %}"
+                                         class="booking-img" />
+                                    <div>
+                                        <div class="booking-title">
+                                            {% trans "Namib Desert Safari" %}
+                                        </div>
+                                        <div class="booking-date">
+                                            {% trans "Booked on" %}: May 20, 2023 • {% trans "Departure" %}: Aug 12, 2023
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="booking-status status-confirmed">{% trans "Confirmed" %}</span>
+                            </div>
+                        </div>
+
+                        <div class="booking-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="booking-info">
+                                    <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                                         alt="{% trans 'Atacama' %}"
+                                         class="booking-img" />
+                                    <div>
+                                        <div class="booking-title">
+                                            {% trans "Atacama Stargazing" %}
+                                        </div>
+                                        <div class="booking-date">
+                                            {% trans "Booked on" %}: May 22, 2023 • {% trans "Departure" %}: Sep 3, 2023
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="booking-status status-cancelled">{% trans "Cancelled" %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="col-lg-4">
+                <div class="booking-card">
+                    <div class="card-header">
+                        <h5>
+                            {% trans "Recent Activity" %}
+                        </h5>
+                        <a href="#" class="view-all">{% trans "View All" %}</a>
+                    </div>
+
+                    <div class="activity-list p-3">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-calendar-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>{% trans "New booking" %}</strong> {% trans "received for Sahara Expedition" %}
+                                </div>
+                                <div class="activity-time">
+                                    {% trans "10 minutes ago" %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>{% trans "New client" %}</strong> {% trans "registered: Michael Brown" %}
+                                </div>
+                                <div class="activity-time">
+                                    {% trans "1 hour ago" %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>{% trans "New review" %}</strong> {% trans "received for Wadi Rum tour" %}
+                                </div>
+                                <div class="activity-time">
+                                    {% trans "3 hours ago" %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>{% trans "New inquiry" %}</strong> {% trans "from potential client" %}
+                                </div>
+                                <div class="activity-time">
+                                    {% trans "5 hours ago" %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>{% trans "Payment received" %}</strong> {% trans "for Namib Safari" %}
+                                </div>
+                                <div class="activity-time">
+                                    {% trans "1 day ago" %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static "js/dash.js" %}"></script>
+{% endblock js %}
+
+{% block footer %}{% endblock footer %}

@@ -6,6 +6,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django.core.mail import send_mail
 from django.conf import settings
+from user_auth.models import UserAuth
 import uuid
 from datetime import timedelta
 from django.utils import timezone

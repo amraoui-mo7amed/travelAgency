@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include(frontend_urls, namespace='frontend')),
+    path('dashboard/', include('dashboard.urls', namespace='dash')),
     path('auth/', include('user_auth.urls', namespace='user_auth')),
 
 ]

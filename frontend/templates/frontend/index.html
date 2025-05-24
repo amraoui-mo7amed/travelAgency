@@ -44,6 +44,8 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/index.css' %}?v={% now "U" %}" />
 
+        {% block css %}
+        {% endblock css %}
         {% block extra_css %}
         {% endblock extra_css %}
     </head>
@@ -792,6 +794,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <!-- Custom JS -->
         <script src="{% static 'js/index.js' %}"></script>
+
+        {% block js %}
+        {% endblock js %}
         {% block extra_js %}
         {% endblock extra_js %}
     </body>
