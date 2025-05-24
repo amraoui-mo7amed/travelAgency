@@ -1,0 +1,798 @@
+{% load static i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+
+<!DOCTYPE html>
+<html lang={{ LANGUAGE_CODE }}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% trans "Desert Mirage Safaris | " %}
+            {% block subtitle %}
+                {% trans "Luxury Desert Adventures" %}
+            {% endblock subtitle %}
+        </title>
+        <!-- Bootstrap CSS -->
+        {% if LANGUAGE_CODE == 'ar' %}
+            <!-- Arabic fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+                  rel="stylesheet" />
+            <!-- Arabic Boostatrp -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+                  rel="stylesheet" />
+        {% else %}
+            <!-- BIDI fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+                  rel="stylesheet" />
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+                  rel="stylesheet" />
+            <!-- BIDI Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                  rel="stylesheet" />
+        {% endif %}
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- Owl Carousel -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+              integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static 'css/index.css' %}?v={% now "U" %}" />
+
+        {% block extra_css %}
+        {% endblock extra_css %}
+    </head>
+    <body class="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}">
+        <!-- Navigation -->
+        {% block nav %}
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">{% trans "Desert Mirage" %}</a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">{% trans "Home" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">{% trans "About" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#destinations">{% trans "Destinations" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#meals">{% trans "Meals" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#animals">{% trans "Animals" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">{% trans "Reviews" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url "user_auth:login" %}">{% trans "Login" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        {% endblock nav %}
+
+        <!-- Hero Section -->
+        {% block hero %}
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center hero-content">
+                            <h1 class="mb-4">
+                                {% trans "Discover the Magic of the Desert" %}
+                            </h1>
+                            <p class="mb-5">
+                                {% trans "Experience unforgettable adventures in the world's most breathtaking deserts with our expert guides and luxury camps." %}
+                            </p>
+                            <a href="#contact" class="btn btn-primary btn-lg">{% trans "Book Your Adventure" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endblock hero %}
+
+        {% block content %}
+            <!-- About Section -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col-lg-6 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Our Story" %}
+                            </h2>
+                            <p class="mb-4">
+                                {% trans "Founded in 2010, Desert Mirage Safaris has been creating extraordinary desert experiences for over a decade. Our team of local experts knows the hidden gems of the world's most stunning deserts." %}
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                {% trans "Award Winning" %}
+                                            </h5>
+                                            <p class="mb-0">
+                                                {% trans "5-time 'Best Safari' winner" %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                {% trans "Expert Guides" %}
+                                            </h5>
+                                            <p class="mb-0">
+                                                {% trans "Local knowledge, global standards" %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <img src="https://plus.unsplash.com/premium_photo-1726863229625-6e3eda258d03?q=80&w=1454&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                 class="w-100 rounded"
+                                 alt="{% trans "About us image" %}" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="why-us" id="why-us">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Why Choose Desert Mirage?" %}
+                            </h2>
+                            <p class="mb-0">
+                                {% trans "We go beyond the ordinary to deliver extraordinary desert experiences you'll cherish forever." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="feature-box">
+                                <i class="fas fa-map-marked-alt feature-icon mb-3"></i>
+                                <h4>
+                                    {% trans "Exclusive Locations" %}
+                                </h4>
+                                <p>
+                                    {% trans "Access to private desert camps and hidden oases unavailable to most travelers." %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="feature-box">
+                                <i class="fas fa-hotel feature-icon mb-3"></i>
+                                <h4>
+                                    {% trans "Luxury Accommodations" %}
+                                </h4>
+                                <p>
+                                    {% trans "Spend your nights in luxurious tents with all modern amenities under the stars." %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="feature-box">
+                                <i class="fas fa-compass feature-icon mb-3"></i>
+                                <h4>
+                                    {% trans "Expert Guides" %}
+                                </h4>
+                                <p>
+                                    {% trans "Our guides have 10+ years experience and deep knowledge of desert ecosystems." %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="feature-box">
+                                <i class="fas fa-leaf feature-icon mb-3"></i>
+                                <h4>
+                                    {% trans "Sustainable Travel" %}
+                                </h4>
+                                <p>
+                                    {% trans "We're committed to eco-friendly practices that protect these fragile environments." %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Destinations Section -->
+            <section class="destinations" id="destinations">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Our Featured Destinations" %}
+                            </h2>
+                            <p>
+                                {% trans "Explore the world's most magnificent deserts with our expertly crafted itineraries." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Sahara Desert -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                                     alt="{% trans 'Sahara Desert dunes at sunset' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Sahara Desert" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Morocco & Algeria" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Namib Desert -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80"
+                                     alt="{% trans 'Red sand dunes of Namib Desert' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Namib Desert" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Namibia" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wadi Rum -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1558985040-ed4d5029dd50?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     alt="{% trans 'Rock formations in Wadi Rum' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Wadi Rum" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Jordan" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Atacama Desert -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80"
+                                     alt="{% trans 'Salt flats in Atacama Desert' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Atacama Desert" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Chile" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arabian Desert -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                                     alt="{% trans 'Sand dunes in Arabian Desert' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Arabian Desert" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "UAE & Oman" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gobi Desert -->
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                     alt="{% trans 'Rocky landscape of Gobi Desert' %}"
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% trans "Gobi Desert" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Mongolia" %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4 animate-on-scroll">
+                        <a href="#" class="btn btn-primary">{% trans "View All Destinations" %}</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meals Section -->
+            <section class="meals" id="meals">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Culinary Experiences" %}
+                            </h2>
+                            <p>
+                                {% trans "Indulge in authentic desert cuisine prepared by our expert chefs using traditional methods." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="meal-card h-100">
+                                <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                     alt="{% trans 'Desert Feast' %}"
+                                     class="img-fluid meal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Bedouin Feast" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Traditional meal cooked in underground ovens with lamb, rice and spices." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="meal-card h-100">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                     alt="{% trans 'Desert Breakfast' %}"
+                                     class="img-fluid meal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Sunrise Breakfast" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Fresh dates, breads, honey and coffee served at dawn on the dunes." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="meal-card h-100">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                     alt="{% trans 'Desert BBQ' %}"
+                                     class="img-fluid meal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Starlight BBQ" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Grilled meats and vegetables under the Milky Way with live music." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="meal-card h-100">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80"
+                                     alt="{% trans 'Tea Ceremony' %}"
+                                     class="img-fluid meal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Tea Ceremony" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Traditional mint tea preparation with a nomadic family in their tent." %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Animals Section -->
+            <section class="animals" id="animals">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Desert Wildlife" %}
+                            </h2>
+                            <p>
+                                {% trans "Meet the incredible creatures that call these harsh yet beautiful landscapes home." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                                     alt="{% trans 'Fennec Fox in natural habitat' %}"
+                                     class="animal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Fennec Fox" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1646021253221-3a76d2550e7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM2fHx8ZW58MHx8fHx8"
+                                     alt="{% trans 'Dromedary camel in desert' %}"
+                                     class="animal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Dromedary Camel" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "The iconic 'ship of the desert' that can go weeks without water." %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1622227056993-6e7f88420855?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     alt="{% trans 'Desert hedgehog curled up' %}"
+                                     class="animal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Desert Hedgehog" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "Nocturnal insectivore that curls into a spiny ball when threatened." %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                     alt="{% trans 'Sand cat in the wild' %}"
+                                     class="animal-img" />
+                                <div class="p-4">
+                                    <h4>
+                                        {% trans "Sand Cat" %}
+                                    </h4>
+                                    <p>
+                                        {% trans "The only cat species living primarily in true deserts with furry paws." %}
+                                    </p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials" id="testimonials">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "What Our Travelers Say" %}
+                            </h2>
+                            <p>
+                                {% trans "Don't just take our word for it - hear from our adventurous guests." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 animate-on-scroll">
+                            <div class="owl-carousel testimonial-carousel">
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                                             alt="{% trans 'Sarah J.' %}"
+                                             class="testimonial-img me-3" />
+                                    </div>
+                                    <div class="d-flex-flex-column">
+                                        <h5 class="mb-1">
+                                            {% trans "Sarah J." %}
+                                        </h5>
+                                        <p>
+                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                                             alt="{% trans 'Sarah J.' %}"
+                                             class="testimonial-img me-3" />
+                                    </div>
+                                    <div class="d-flex-flex-column">
+                                        <h5 class="mb-1">
+                                            {% trans "Sarah J." %}
+                                        </h5>
+                                        <p>
+                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                                             alt="{% trans 'Sarah J.' %}"
+                                             class="testimonial-img me-3" />
+                                    </div>
+                                    <div class="d-flex-flex-column">
+                                        <h5 class="mb-1">
+                                            {% trans "Sarah J." %}
+                                        </h5>
+                                        <p>
+                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                                             alt="{% trans 'Sarah J.' %}"
+                                             class="testimonial-img me-3" />
+                                    </div>
+                                    <div class="d-flex-flex-column">
+                                        <h5 class="mb-1">
+                                            {% trans "Sarah J." %}
+                                        </h5>
+                                        <p>
+                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Ready for Your Adventure?" %}
+                            </h2>
+                            <p>
+                                {% trans "Contact us to start planning your personalized desert experience." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 animate-on-scroll">
+                            <div class="contact-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <input type="text"
+                                                   class="form-control"
+                                                   placeholder="{% trans 'Your Name' %}"
+                                                   required />
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <input type="email"
+                                                   class="form-control"
+                                                   placeholder="{% trans 'Your Email' %}"
+                                                   required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <input type="tel"
+                                                   class="form-control"
+                                                   placeholder="{% trans 'Phone Number' %}" />
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <select class="form-select">
+                                                <option selected>
+                                                    {% trans "Select Destination" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Sahara Desert" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Namib Desert" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Wadi Rum" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Atacama Desert" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Arabian Desert" %}
+                                                </option>
+                                                <option>
+                                                    {% trans "Gobi Desert" %}
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea class="form-control"
+                                                  rows="5"
+                                                  placeholder="{% trans 'Your Message' %}"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-submit">
+                                            {% trans "Send Message" %}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contact-info text-center">
+                                <div class="d-inline-block me-4 mb-3 mb-md-0">
+                                    <i class="fas fa-phone-alt contact-icon"></i>
+                                    <span>{% trans "+1 (555) 123-4567" %}</span>
+                                </div>
+                                <div class="d-inline-block me-4 mb-3 mb-md-0">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                    <span>{% trans "info@desertmirage.com" %}</span>
+                                </div>
+                                <div class="d-inline-block">
+                                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                                    <span>{% trans "123 Dune Rd, Sedona, AZ" %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endblock content %}
+
+        <!-- Footer -->
+        {% block footer %}
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
+                            <h3 class="mb-4">
+                                {% trans "Desert Mirage" %}
+                            </h3>
+                            <p>
+                                {% trans "Creating unforgettable desert adventures with a commitment to sustainability and authentic cultural experiences since 2010." %}
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-5 mb-md-0 animate-on-scroll">
+                            <h4 class="mb-4">
+                                {% trans "Quick Links" %}
+                            </h4>
+                            <div class="footer-links d-flex flex-column">
+                                <a href="#home">{% trans "Home" %}</a>
+                                <a href="#about">{% trans "About" %}</a>
+                                <a href="#destinations">{% trans "Destinations" %}</a>
+                                <a href="#meals">{% trans "Meals" %}</a>
+                                <a href="#animals">{% trans "Animals" %}</a>
+                                <a href="#contact">{% trans "Contact" %}</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-5 mb-md-0 animate-on-scroll">
+                            <h4 class="mb-4">
+                                {% trans "Destinations" %}
+                            </h4>
+                            <div class="footer-links d-flex flex-column">
+                                <a href="#">{% trans "Sahara Desert" %}</a>
+                                <a href="#">{% trans "Namib Desert" %}</a>
+                                <a href="#">{% trans "Wadi Rum" %}</a>
+                                <a href="#">{% trans "Atacama Desert" %}</a>
+                                <a href="#">{% trans "Arabian Desert" %}</a>
+                                <a href="#">{% trans "Gobi Desert" %}</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 animate-on-scroll">
+                            <h4 class="mb-4">
+                                {% trans "Newsletter" %}
+                            </h4>
+                            <p>
+                                {% trans "Subscribe for exclusive offers and desert travel tips." %}
+                            </p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <input type="email"
+                                           class="form-control"
+                                           placeholder="{% trans 'Your Email' %}" />
+                                    <button class="btn btn-primary" type="submit">
+                                        {% trans "Subscribe" %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-5" style="border-color: rgba(255,255,255,0.1);" />
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="mb-0">
+                                {% trans "© 2023 Desert Mirage Safaris. All rights reserved." %}
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-links d-inline">
+                                <a href="#" class="me-3">{% trans "Privacy Policy" %}</a>
+                                <a href="#">{% trans "Terms of Service" %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock footer %}
+
+        <!-- Language Switcher -->
+        {% block lang %}
+            <div class="language-switcher">
+                {% csrf_token %}
+                <div class="language-btn" id="languageBtn">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="language-options" id="languageOptions">
+                    <div class="language-option" data-lang="en">
+                        {% trans "English" %}
+                    </div>
+                    <div class="language-option" data-lang="ar">
+                        {% trans "العربية" %}
+                    </div>
+                    <div class="language-option" data-lang="fr">
+                        {% trans "Français" %}
+                    </div>
+                </div>
+            </div>
+
+        {% endblock lang %}
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- Custom JS -->
+        <script src="{% static 'js/index.js' %}"></script>
+        {% block extra_js %}
+        {% endblock extra_js %}
+    </body>
+</html>
