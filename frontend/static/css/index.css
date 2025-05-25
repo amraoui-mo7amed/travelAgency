@@ -1,8 +1,14 @@
 :root {
-    --primary: #c19a6b;
+    /* --primary: #c19a6b;
     --secondary: #6e3b1e;
     --dark: #3a2c2a;
     --light: #f5e7d6;
+    --sand: #d4b483;
+    --sunset: #e2725b; */
+    --primary: #78290f;
+    --secondary: #ff7d00;
+    --dark: #001524;
+    --light: #ffecd1;
     --sand: #d4b483;
     --sunset: #e2725b;
 }
