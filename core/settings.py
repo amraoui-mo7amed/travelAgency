@@ -178,3 +178,14 @@ AUTHENTICATION_BACKENDS = [
 LOGIN_URL = 'user_auth:login'
 LOGIN_REDIRECT_URL = 'dash:home'  # Use your named URL pattern
 AUTH_USER_MODEL = 'user_auth.CustomUser'
+
+
+# Cloudflare & HTTPS settings
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True  # Redirect HTTP → HTTPS
+SESSION_COOKIE_SECURE = True  # Send session cookies only over HTTPS
+CSRF_COOKIE_SECURE = True  # Send CSRF cookies only over HTTPS
+CSRF_TRUSTED_ORIGINS = [
+    'https://travel-agency.m07amed.uk',
+    'https://www.travel-agency.m07amed.uk',
+]

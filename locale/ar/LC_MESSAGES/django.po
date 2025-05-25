@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-24 17:15+0000\n"
+"POT-Creation-Date: 2025-05-25 05:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "لوحة القيادة"
 
 #: dashboard/templates/dashboard/home.html:24
 #: frontend/templates/frontend/index.html:57
-#: frontend/templates/frontend/index.html:696
+#: frontend/templates/frontend/index.html:707
 msgid "Desert Mirage"
 msgstr "سراب الصحراء"
 
@@ -226,9 +226,9 @@ msgid "Confirmed"
 msgstr "تأكيد"
 
 #: dashboard/templates/dashboard/home.html:321
-#: frontend/templates/frontend/index.html:278
-#: frontend/templates/frontend/index.html:643
-#: frontend/templates/frontend/index.html:722
+#: frontend/templates/frontend/index.html:289
+#: frontend/templates/frontend/index.html:654
+#: frontend/templates/frontend/index.html:733
 msgid "Wadi Rum"
 msgstr "وادي رم"
 
@@ -241,9 +241,9 @@ msgid "Pending"
 msgstr "قيد الانتظار"
 
 #: dashboard/templates/dashboard/home.html:340
-#: frontend/templates/frontend/index.html:260
-#: frontend/templates/frontend/index.html:640
-#: frontend/templates/frontend/index.html:721
+#: frontend/templates/frontend/index.html:271
+#: frontend/templates/frontend/index.html:651
+#: frontend/templates/frontend/index.html:732
 msgid "Namib Desert"
 msgstr "صحراء ناميب"
 
@@ -315,51 +315,55 @@ msgstr "Desert Mirage Safaris | "
 msgid "Luxury Desert Adventures"
 msgstr "مغامرات فارهة مرفه"
 
-#: frontend/templates/frontend/index.html:61
-#: frontend/templates/frontend/index.html:707
+#: frontend/templates/frontend/index.html:65
+msgid "Toggle navigation"
+msgstr "<toggle the navigation>تبديل الملاحة</toggle>"
+
+#: frontend/templates/frontend/index.html:72
+#: frontend/templates/frontend/index.html:718
 msgid "Home"
 msgstr "الرئيسية"
 
-#: frontend/templates/frontend/index.html:64
-#: frontend/templates/frontend/index.html:708
+#: frontend/templates/frontend/index.html:75
+#: frontend/templates/frontend/index.html:719
 msgid "About"
 msgstr "من نحن"
 
-#: frontend/templates/frontend/index.html:67
-#: frontend/templates/frontend/index.html:709
-#: frontend/templates/frontend/index.html:717
+#: frontend/templates/frontend/index.html:78
+#: frontend/templates/frontend/index.html:720
+#: frontend/templates/frontend/index.html:728
 msgid "Destinations"
 msgstr "وجهات سفر"
 
-#: frontend/templates/frontend/index.html:70
-#: frontend/templates/frontend/index.html:710
+#: frontend/templates/frontend/index.html:81
+#: frontend/templates/frontend/index.html:721
 msgid "Meals"
 msgstr "الوجبات"
 
-#: frontend/templates/frontend/index.html:73
-#: frontend/templates/frontend/index.html:711
+#: frontend/templates/frontend/index.html:84
+#: frontend/templates/frontend/index.html:722
 msgid "Animals"
 msgstr "الحيوانات"
 
-#: frontend/templates/frontend/index.html:76
+#: frontend/templates/frontend/index.html:87
 msgid "Reviews"
 msgstr "المراجعات"
 
-#: frontend/templates/frontend/index.html:79
-#: frontend/templates/frontend/index.html:712
+#: frontend/templates/frontend/index.html:90
+#: frontend/templates/frontend/index.html:723
 msgid "Contact"
 msgstr "اتصل بنا"
 
-#: frontend/templates/frontend/index.html:82
+#: frontend/templates/frontend/index.html:93
 #: user_auth/templates/user_auth/login.html:5
 msgid "Login"
 msgstr "تسجيل الدخول"
 
-#: frontend/templates/frontend/index.html:98
+#: frontend/templates/frontend/index.html:109
 msgid "Discover the Magic of the Desert"
 msgstr "اكتشف سحر الصحراء"
 
-#: frontend/templates/frontend/index.html:101
+#: frontend/templates/frontend/index.html:112
 msgid ""
 "Experience unforgettable adventures in the world's most breathtaking deserts"
 " with our expert guides and luxury camps."
@@ -367,15 +371,15 @@ msgstr ""
 "اعيش مغامرات لا تنسى في أخير الصحراء في العالم مع دلايلنا الخبراء ومعسكرات "
 "الفاخرة."
 
-#: frontend/templates/frontend/index.html:103
+#: frontend/templates/frontend/index.html:114
 msgid "Book Your Adventure"
 msgstr "احجز مغامرتك"
 
-#: frontend/templates/frontend/index.html:117
+#: frontend/templates/frontend/index.html:128
 msgid "Our Story"
 msgstr "قصتنا"
 
-#: frontend/templates/frontend/index.html:120
+#: frontend/templates/frontend/index.html:131
 msgid ""
 "Founded in 2010, Desert Mirage Safaris has been creating extraordinary "
 "desert experiences for over a decade. Our team of local experts knows the "
@@ -385,176 +389,176 @@ msgstr ""
 " عقد من الزمان. فريقنا من الخبراء المحليين يعرف المرامي الخفية لأخير الصحراء"
 " المذهلة في العالم."
 
-#: frontend/templates/frontend/index.html:127
+#: frontend/templates/frontend/index.html:138
 msgid "Award Winning"
 msgstr "فائز بجوائز"
 
-#: frontend/templates/frontend/index.html:130
+#: frontend/templates/frontend/index.html:141
 msgid "5-time 'Best Safari' winner"
 msgstr "فائز خمس مرات بجائزة 'أفضل سفاري'"
 
-#: frontend/templates/frontend/index.html:139
-#: frontend/templates/frontend/index.html:198
+#: frontend/templates/frontend/index.html:150
+#: frontend/templates/frontend/index.html:209
 msgid "Expert Guides"
 msgstr "مرشدون خبراء"
 
-#: frontend/templates/frontend/index.html:142
+#: frontend/templates/frontend/index.html:153
 msgid "Local knowledge, global standards"
 msgstr "معرفة محلية، معايير عالمية"
 
-#: frontend/templates/frontend/index.html:152
+#: frontend/templates/frontend/index.html:163
 msgid "About us image"
 msgstr "عنا صورة"
 
-#: frontend/templates/frontend/index.html:164
+#: frontend/templates/frontend/index.html:175
 msgid "Why Choose Desert Mirage?"
 msgstr "لماذا تختار سراب الصحراء؟"
 
-#: frontend/templates/frontend/index.html:167
+#: frontend/templates/frontend/index.html:178
 msgid ""
 "We go beyond the ordinary to deliver extraordinary desert experiences you'll"
 " cherish forever."
 msgstr ""
 "نذهب أبعد من الأعتيادي لتقديم تجارب فريدة في الصحراء تحفظها إلى الأبد."
 
-#: frontend/templates/frontend/index.html:176
+#: frontend/templates/frontend/index.html:187
 msgid "Exclusive Locations"
 msgstr "مواقع حصرية"
 
-#: frontend/templates/frontend/index.html:179
+#: frontend/templates/frontend/index.html:190
 msgid ""
 "Access to private desert camps and hidden oases unavailable to most "
 "travelers."
 msgstr ""
 "الوصول إلى معسكرات خاصة في الصحراء وواحات مخفية غير متاحة لمعظم المسافرين."
 
-#: frontend/templates/frontend/index.html:187
+#: frontend/templates/frontend/index.html:198
 msgid "Luxury Accommodations"
 msgstr "إقامة فاخرة"
 
-#: frontend/templates/frontend/index.html:190
+#: frontend/templates/frontend/index.html:201
 msgid ""
 "Spend your nights in luxurious tents with all modern amenities under the "
 "stars."
 msgstr "قضاء لياليك في خيام فاخرة مجهزة بجميع التجهيزات الحديثة تحت النجوم."
 
-#: frontend/templates/frontend/index.html:201
+#: frontend/templates/frontend/index.html:212
 msgid ""
 "Our guides have 10+ years experience and deep knowledge of desert "
 "ecosystems."
 msgstr "لدى برامجنا خبرات تزيد عن 10 سنوات ومعرفة عميقة بنظم الصحراء البيئية."
 
-#: frontend/templates/frontend/index.html:209
+#: frontend/templates/frontend/index.html:220
 msgid "Sustainable Travel"
 msgstr "السفر المستدام"
 
-#: frontend/templates/frontend/index.html:212
+#: frontend/templates/frontend/index.html:223
 msgid ""
 "We're committed to eco-friendly practices that protect these fragile "
 "environments."
 msgstr ""
 "نحن ملتزمون بالممارسات المتجانسة مع البيئة التي تحمي هذه البيئات الهشة."
 
-#: frontend/templates/frontend/index.html:226
+#: frontend/templates/frontend/index.html:237
 msgid "Our Featured Destinations"
 msgstr "وجهاتنا المميزة"
 
-#: frontend/templates/frontend/index.html:229
+#: frontend/templates/frontend/index.html:240
 msgid ""
 "Explore the world's most magnificent deserts with our expertly crafted "
 "itineraries."
 msgstr "اكتشف أعظم الصحارى في العالم مع جداولنا المصممة بعناية."
 
-#: frontend/templates/frontend/index.html:238
+#: frontend/templates/frontend/index.html:249
 msgid "Sahara Desert dunes at sunset"
 msgstr "كثبان <strong>الصحراء الكبرى</strong> في غروب الشمس"
 
-#: frontend/templates/frontend/index.html:242
-#: frontend/templates/frontend/index.html:637
-#: frontend/templates/frontend/index.html:720
+#: frontend/templates/frontend/index.html:253
+#: frontend/templates/frontend/index.html:648
+#: frontend/templates/frontend/index.html:731
 msgid "Sahara Desert"
 msgstr "صحراء الصحراء الكبرى"
 
-#: frontend/templates/frontend/index.html:245
+#: frontend/templates/frontend/index.html:256
 msgid "Morocco & Algeria"
 msgstr "المغرب والجزائر"
 
-#: frontend/templates/frontend/index.html:247
-#: frontend/templates/frontend/index.html:265
-#: frontend/templates/frontend/index.html:283
-#: frontend/templates/frontend/index.html:301
-#: frontend/templates/frontend/index.html:319
-#: frontend/templates/frontend/index.html:337
+#: frontend/templates/frontend/index.html:258
+#: frontend/templates/frontend/index.html:276
+#: frontend/templates/frontend/index.html:294
+#: frontend/templates/frontend/index.html:312
+#: frontend/templates/frontend/index.html:330
+#: frontend/templates/frontend/index.html:348
 msgid "Explore"
 msgstr "استكشف"
 
-#: frontend/templates/frontend/index.html:256
+#: frontend/templates/frontend/index.html:267
 msgid "Red sand dunes of Namib Desert"
 msgstr "الكثبان الرملية الحمراء لصحراء ناميب"
 
-#: frontend/templates/frontend/index.html:263
+#: frontend/templates/frontend/index.html:274
 msgid "Namibia"
 msgstr "ناميبيا"
 
-#: frontend/templates/frontend/index.html:274
+#: frontend/templates/frontend/index.html:285
 msgid "Rock formations in Wadi Rum"
 msgstr "تشكيلات صخرية في وادي رم"
 
-#: frontend/templates/frontend/index.html:281
+#: frontend/templates/frontend/index.html:292
 msgid "Jordan"
 msgstr "الأردن"
 
-#: frontend/templates/frontend/index.html:292
+#: frontend/templates/frontend/index.html:303
 msgid "Salt flats in Atacama Desert"
 msgstr "سبخات ملحية في صحراء أتاكاما"
 
-#: frontend/templates/frontend/index.html:296
-#: frontend/templates/frontend/index.html:646
-#: frontend/templates/frontend/index.html:723
+#: frontend/templates/frontend/index.html:307
+#: frontend/templates/frontend/index.html:657
+#: frontend/templates/frontend/index.html:734
 msgid "Atacama Desert"
 msgstr "صحراء أتاكاما"
 
-#: frontend/templates/frontend/index.html:299
+#: frontend/templates/frontend/index.html:310
 msgid "Chile"
 msgstr "تشيلي"
 
-#: frontend/templates/frontend/index.html:310
+#: frontend/templates/frontend/index.html:321
 msgid "Sand dunes in Arabian Desert"
 msgstr "كثبان رملية في الصحراء العربية"
 
-#: frontend/templates/frontend/index.html:314
-#: frontend/templates/frontend/index.html:649
-#: frontend/templates/frontend/index.html:724
+#: frontend/templates/frontend/index.html:325
+#: frontend/templates/frontend/index.html:660
+#: frontend/templates/frontend/index.html:735
 msgid "Arabian Desert"
 msgstr "الصحراء العربية"
 
-#: frontend/templates/frontend/index.html:317
+#: frontend/templates/frontend/index.html:328
 msgid "UAE & Oman"
 msgstr "الإمارات وعمان"
 
-#: frontend/templates/frontend/index.html:328
+#: frontend/templates/frontend/index.html:339
 msgid "Rocky landscape of Gobi Desert"
 msgstr "المناظر الصخرية لصحراء جوبي"
 
-#: frontend/templates/frontend/index.html:332
-#: frontend/templates/frontend/index.html:652
-#: frontend/templates/frontend/index.html:725
+#: frontend/templates/frontend/index.html:343
+#: frontend/templates/frontend/index.html:663
+#: frontend/templates/frontend/index.html:736
 msgid "Gobi Desert"
 msgstr "صحراء جوبي"
 
-#: frontend/templates/frontend/index.html:335
+#: frontend/templates/frontend/index.html:346
 msgid "Mongolia"
 msgstr "منغوليا"
 
-#: frontend/templates/frontend/index.html:343
+#: frontend/templates/frontend/index.html:354
 msgid "View All Destinations"
 msgstr "عرض جميع الوجهات"
 
-#: frontend/templates/frontend/index.html:354
+#: frontend/templates/frontend/index.html:365
 msgid "Culinary Experiences"
 msgstr "التجارب الطعام"
 
-#: frontend/templates/frontend/index.html:357
+#: frontend/templates/frontend/index.html:368
 msgid ""
 "Indulge in authentic desert cuisine prepared by our expert chefs using "
 "traditional methods."
@@ -562,57 +566,57 @@ msgstr ""
 "استمتع بمأكولات الصحراء الأصيلة المحضرة من قبل طهاتنا الخبراء باستخدام الطرق"
 " التقليدية."
 
-#: frontend/templates/frontend/index.html:365
+#: frontend/templates/frontend/index.html:376
 msgid "Desert Feast"
 msgstr "وليمة الصحراء"
 
-#: frontend/templates/frontend/index.html:369
+#: frontend/templates/frontend/index.html:380
 msgid "Bedouin Feast"
 msgstr "وليمة البدو"
 
-#: frontend/templates/frontend/index.html:372
+#: frontend/templates/frontend/index.html:383
 msgid ""
 "Traditional meal cooked in underground ovens with lamb, rice and spices."
 msgstr "وجبة تقليدية مطهية في أفران تحت الأرض مع اللحم والأرز والتوابل."
 
-#: frontend/templates/frontend/index.html:380
+#: frontend/templates/frontend/index.html:391
 msgid "Desert Breakfast"
 msgstr "إفطار الصحراء"
 
-#: frontend/templates/frontend/index.html:384
+#: frontend/templates/frontend/index.html:395
 msgid "Sunrise Breakfast"
 msgstr "إفطار الشروق"
 
-#: frontend/templates/frontend/index.html:387
+#: frontend/templates/frontend/index.html:398
 msgid "Fresh dates, breads, honey and coffee served at dawn on the dunes."
 msgstr "تمر طازج وخبز وعسل وقهوة يُقدم عند الفجر على الكثبان.<"
 
-#: frontend/templates/frontend/index.html:395
+#: frontend/templates/frontend/index.html:406
 msgid "Desert BBQ"
 msgstr "باربكيو الصحراء"
 
-#: frontend/templates/frontend/index.html:399
+#: frontend/templates/frontend/index.html:410
 msgid "Starlight BBQ"
 msgstr "باربكيو ضوء النجوم"
 
-#: frontend/templates/frontend/index.html:402
+#: frontend/templates/frontend/index.html:413
 msgid "Grilled meats and vegetables under the Milky Way with live music."
 msgstr "لحوم وخضروات مشوية تحت درب التبانة مع موسيقى حية.<"
 
-#: frontend/templates/frontend/index.html:410
-#: frontend/templates/frontend/index.html:414
+#: frontend/templates/frontend/index.html:421
+#: frontend/templates/frontend/index.html:425
 msgid "Tea Ceremony"
 msgstr "مراسم الشاي"
 
-#: frontend/templates/frontend/index.html:417
+#: frontend/templates/frontend/index.html:428
 msgid "Traditional mint tea preparation with a nomadic family in their tent."
 msgstr "إعداد شاي النعناع التقليدي مع عائلة من البدو في خيمتهم.<"
 
-#: frontend/templates/frontend/index.html:432
+#: frontend/templates/frontend/index.html:443
 msgid "Desert Wildlife"
 msgstr "حياة الصحراء البرية"
 
-#: frontend/templates/frontend/index.html:435
+#: frontend/templates/frontend/index.html:446
 msgid ""
 "Meet the incredible creatures that call these harsh yet beautiful landscapes"
 " home."
@@ -620,88 +624,88 @@ msgstr ""
 "تعرف على المخلوقات المذهلة التي تعيش في هذه المناظر الطبيعية القاسية "
 "والجميلة.<"
 
-#: frontend/templates/frontend/index.html:443
+#: frontend/templates/frontend/index.html:454
 msgid "Fennec Fox in natural habitat"
 msgstr "ثعلب الفنك في بيئته الطبيعية"
 
-#: frontend/templates/frontend/index.html:447
+#: frontend/templates/frontend/index.html:458
 msgid "Fennec Fox"
 msgstr "ثعلب الفنك"
 
-#: frontend/templates/frontend/index.html:450
+#: frontend/templates/frontend/index.html:461
 msgid ""
 "The smallest fox species with distinctive large ears that help dissipate "
 "heat."
 msgstr "أصغر أنواع الثعالب بآذان كبيرة مميزة تساعد على تبديد الحرارة."
 
-#: frontend/templates/frontend/index.html:452
-#: frontend/templates/frontend/index.html:469
-#: frontend/templates/frontend/index.html:486
-#: frontend/templates/frontend/index.html:503
+#: frontend/templates/frontend/index.html:463
+#: frontend/templates/frontend/index.html:480
+#: frontend/templates/frontend/index.html:497
+#: frontend/templates/frontend/index.html:514
 msgid "Learn More"
 msgstr "اعرف أكثر"
 
-#: frontend/templates/frontend/index.html:460
+#: frontend/templates/frontend/index.html:471
 msgid "Dromedary camel in desert"
 msgstr "جمل الجمال في الصحراء"
 
-#: frontend/templates/frontend/index.html:464
+#: frontend/templates/frontend/index.html:475
 msgid "Dromedary Camel"
 msgstr "جمل الجمل"
 
-#: frontend/templates/frontend/index.html:467
+#: frontend/templates/frontend/index.html:478
 msgid "The iconic 'ship of the desert' that can go weeks without water."
 msgstr "\"سفينة الصحراء\" الأيقونية التي يمكنها البقاء لأسابيع دون ماء."
 
-#: frontend/templates/frontend/index.html:477
+#: frontend/templates/frontend/index.html:488
 msgid "Desert hedgehog curled up"
 msgstr "قنفذ الصحراء ملتف"
 
-#: frontend/templates/frontend/index.html:481
+#: frontend/templates/frontend/index.html:492
 msgid "Desert Hedgehog"
 msgstr "قنفذ الصحراء"
 
-#: frontend/templates/frontend/index.html:484
+#: frontend/templates/frontend/index.html:495
 msgid "Nocturnal insectivore that curls into a spiny ball when threatened."
 msgstr "حيوان ليلي يأكل الحشرات يتكور على شكل كرة شائكة عندما يتعرض للتهديد."
 
-#: frontend/templates/frontend/index.html:494
+#: frontend/templates/frontend/index.html:505
 msgid "Sand cat in the wild"
 msgstr "قط رملي في البرية"
 
-#: frontend/templates/frontend/index.html:498
+#: frontend/templates/frontend/index.html:509
 msgid "Sand Cat"
 msgstr "قط رملي"
 
-#: frontend/templates/frontend/index.html:501
+#: frontend/templates/frontend/index.html:512
 msgid "The only cat species living primarily in true deserts with furry paws."
 msgstr ""
 "هو النوع الوحيد من القطط التي تعيش بشكل أساسي في الصحارى الحقيقية مع أرجل "
 "مغطاة بالفراء."
 
-#: frontend/templates/frontend/index.html:517
+#: frontend/templates/frontend/index.html:528
 msgid "What Our Travelers Say"
 msgstr "ما يقوله رحالتنا"
 
-#: frontend/templates/frontend/index.html:520
+#: frontend/templates/frontend/index.html:531
 msgid "Don't just take our word for it - hear from our adventurous guests."
 msgstr "لا تأخذ كلامنا فقط - استمع إلى ضيوفنا المغامرين."
 
-#: frontend/templates/frontend/index.html:530
-#: frontend/templates/frontend/index.html:535
-#: frontend/templates/frontend/index.html:545
-#: frontend/templates/frontend/index.html:550
-#: frontend/templates/frontend/index.html:560
-#: frontend/templates/frontend/index.html:565
-#: frontend/templates/frontend/index.html:575
-#: frontend/templates/frontend/index.html:580
+#: frontend/templates/frontend/index.html:541
+#: frontend/templates/frontend/index.html:546
+#: frontend/templates/frontend/index.html:556
+#: frontend/templates/frontend/index.html:561
+#: frontend/templates/frontend/index.html:571
+#: frontend/templates/frontend/index.html:576
+#: frontend/templates/frontend/index.html:586
+#: frontend/templates/frontend/index.html:591
 msgid "Sarah J."
 msgstr "سارة ج."
 
-#: frontend/templates/frontend/index.html:538
-#: frontend/templates/frontend/index.html:553
-#: frontend/templates/frontend/index.html:568
-#: frontend/templates/frontend/index.html:583
+#: frontend/templates/frontend/index.html:549
+#: frontend/templates/frontend/index.html:564
+#: frontend/templates/frontend/index.html:579
+#: frontend/templates/frontend/index.html:594
 msgid ""
 "The Sahara experience was beyond anything I imagined. The luxury camp was "
 "exquisite, and our guide Mohamed knew every secret of the desert. Waking up "
@@ -711,52 +715,52 @@ msgstr ""
 "محمد يعرف كل أسرار الصحراء. الاستيقاظ على شروق الشمس فوق الكثبان هو شيء لن "
 "أنساه أبداً."
 
-#: frontend/templates/frontend/index.html:600
+#: frontend/templates/frontend/index.html:611
 msgid "Ready for Your Adventure?"
 msgstr "جاهز لمغامرتك؟"
 
-#: frontend/templates/frontend/index.html:603
+#: frontend/templates/frontend/index.html:614
 msgid "Contact us to start planning your personalized desert experience."
 msgstr "اتصل بنا لبدء تخطيط تجربتك الصحراوية الشخصية."
 
-#: frontend/templates/frontend/index.html:615
+#: frontend/templates/frontend/index.html:626
 msgid "Your Name"
 msgstr "اسمك"
 
-#: frontend/templates/frontend/index.html:621
-#: frontend/templates/frontend/index.html:739
+#: frontend/templates/frontend/index.html:632
+#: frontend/templates/frontend/index.html:750
 msgid "Your Email"
 msgstr "بريدك الإلكتروني"
 
-#: frontend/templates/frontend/index.html:629
+#: frontend/templates/frontend/index.html:640
 msgid "Phone Number"
 msgstr "رقم الهاتف"
 
-#: frontend/templates/frontend/index.html:634
+#: frontend/templates/frontend/index.html:645
 msgid "Select Destination"
 msgstr "اختر الوجهة"
 
-#: frontend/templates/frontend/index.html:660
+#: frontend/templates/frontend/index.html:671
 msgid "Your Message"
 msgstr "رسالتك"
 
-#: frontend/templates/frontend/index.html:664
+#: frontend/templates/frontend/index.html:675
 msgid "Send Message"
 msgstr "أرسل الرسالة"
 
-#: frontend/templates/frontend/index.html:672
+#: frontend/templates/frontend/index.html:683
 msgid "+1 (555) 123-4567"
 msgstr "+1 (555) 123-4567"
 
-#: frontend/templates/frontend/index.html:676
+#: frontend/templates/frontend/index.html:687
 msgid "info@desertmirage.com"
 msgstr "info@desertmirage.com"
 
-#: frontend/templates/frontend/index.html:680
+#: frontend/templates/frontend/index.html:691
 msgid "123 Dune Rd, Sedona, AZ"
 msgstr "123 طريق Dune، سيدونا، أريزونا"
 
-#: frontend/templates/frontend/index.html:699
+#: frontend/templates/frontend/index.html:710
 msgid ""
 "Creating unforgettable desert adventures with a commitment to sustainability"
 " and authentic cultural experiences since 2010."
@@ -764,43 +768,43 @@ msgstr ""
 "خلق مغامرات صحراوية لا تنسى مع الالتزام بالاستدامة والتجارب الثقافية الأصيلة"
 " منذ عام 2010."
 
-#: frontend/templates/frontend/index.html:704
+#: frontend/templates/frontend/index.html:715
 msgid "Quick Links"
 msgstr "روابط سريعة"
 
-#: frontend/templates/frontend/index.html:730
+#: frontend/templates/frontend/index.html:741
 msgid "Newsletter"
 msgstr "النشرة الإخبارية"
 
-#: frontend/templates/frontend/index.html:733
+#: frontend/templates/frontend/index.html:744
 msgid "Subscribe for exclusive offers and desert travel tips."
 msgstr "اشترك للحصول على عروض حصرية ونصائح سفر صحراوية."
 
-#: frontend/templates/frontend/index.html:741
+#: frontend/templates/frontend/index.html:752
 msgid "Subscribe"
 msgstr "اشترك"
 
-#: frontend/templates/frontend/index.html:751
+#: frontend/templates/frontend/index.html:762
 msgid "© 2023 Desert Mirage Safaris. All rights reserved."
 msgstr "© 2023 سفاري سراب الصحراء. كل الحقوق محفوظة."
 
-#: frontend/templates/frontend/index.html:756
+#: frontend/templates/frontend/index.html:767
 msgid "Privacy Policy"
 msgstr "سياسة الخصوصية"
 
-#: frontend/templates/frontend/index.html:757
+#: frontend/templates/frontend/index.html:768
 msgid "Terms of Service"
 msgstr "البنود الخدمية"
 
-#: frontend/templates/frontend/index.html:774
+#: frontend/templates/frontend/index.html:785
 msgid "English"
 msgstr "الإنجليزية"
 
-#: frontend/templates/frontend/index.html:777
+#: frontend/templates/frontend/index.html:788
 msgid "العربية"
 msgstr "العربية"
 
-#: frontend/templates/frontend/index.html:780
+#: frontend/templates/frontend/index.html:791
 msgid "Français"
 msgstr "فرنسي"
 
@@ -869,7 +873,7 @@ msgstr "تسجيل الدخول"
 #: user_auth/templates/user_auth/login.html:35
 #, fuzzy
 #| msgid "Email Address"
-msgid "E-mail Adress"
+msgid "Email Adress"
 msgstr "<strong>البريد الإلكتروني</strong>"
 
 #: user_auth/templates/user_auth/login.html:38
@@ -880,54 +884,54 @@ msgstr "كلمة المرور"
 msgid "Forgot password?"
 msgstr "هل نسيت كلمة المرور؟"
 
-#: user_auth/views/auth.py:30 user_auth/views/auth.py:82
+#: user_auth/views/auth.py:31 user_auth/views/auth.py:83
 msgid "Please enter a valid email address"
 msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
 
-#: user_auth/views/auth.py:34 user_auth/views/auth.py:77
+#: user_auth/views/auth.py:35 user_auth/views/auth.py:78
 msgid "All fields are required"
 msgstr "جميع الحقول مطلوبة"
 
-#: user_auth/views/auth.py:38 user_auth/views/auth.py:88
+#: user_auth/views/auth.py:39 user_auth/views/auth.py:89
 msgid "Password must be at least 4 characters"
 msgstr "يجب أن تحتوي كلمة المرور على أربعة أحرف على الأقل"
 
-#: user_auth/views/auth.py:51
+#: user_auth/views/auth.py:52
 msgid ""
 "Your account is not active. Please check your email for activation link"
 msgstr "حسابك غير نشط. يرجى التحقق من بريدك الإلكتروني من أجل رابط التفعيل"
 
-#: user_auth/views/auth.py:53
+#: user_auth/views/auth.py:54
 msgid "Invalid email address or password"
 msgstr "عنوان البريد الإلكتروني أو كلمة المرور غير صالحين"
 
-#: user_auth/views/auth.py:85
+#: user_auth/views/auth.py:86
 msgid "Passwords do not match"
 msgstr "كلمات المرور غير متطابقة"
 
-#: user_auth/views/auth.py:92
+#: user_auth/views/auth.py:93
 msgid "An account with this email already exists"
 msgstr "حساب مع هذا البريد الإلكتروني موجود مسبقًا"
 
-#: user_auth/views/auth.py:116
+#: user_auth/views/auth.py:117
 msgid "Confirm your email address"
 msgstr "أكد عنوان بريدك الإلكتروني"
 
-#: user_auth/views/auth.py:126
+#: user_auth/views/auth.py:127
 msgid ""
 "Account created successfully! Please check your email to confirm your "
 "account."
 msgstr "تم إنشاء الحساب بنجاح! يرجى التحقق من بريدك الإلكتروني لتأكيد حسابك."
 
-#: user_auth/views/auth.py:145
+#: user_auth/views/auth.py:146
 msgid "The confirmation link has expired. Please request a new one."
 msgstr "انتهت صلاحية رابط التأكيد. يرجى طلب رابط جديد."
 
-#: user_auth/views/auth.py:154
+#: user_auth/views/auth.py:155
 msgid "Your email has been successfully confirmed! You can now log in."
 msgstr "تم تأكيد بريدك الإلكتروني بنجاح! يمكنك الآن تسجيل الدخول."
 
-#: user_auth/views/auth.py:160
+#: user_auth/views/auth.py:161
 msgid "Invalid confirmation link. Please try again."
 msgstr "رابط تأكيد غير صالح. يرجى المحاولة مرة أخرى."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-24 17:16+0000\n"
+"POT-Creation-Date: 2025-05-25 05:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "Tableau de bord"
 
 #: dashboard/templates/dashboard/home.html:24
 #: frontend/templates/frontend/index.html:57
-#: frontend/templates/frontend/index.html:696
+#: frontend/templates/frontend/index.html:707
 msgid "Desert Mirage"
 msgstr "Mirage du désert"
 
@@ -226,9 +226,9 @@ msgid "Confirmed"
 msgstr "Confirmé"
 
 #: dashboard/templates/dashboard/home.html:321
-#: frontend/templates/frontend/index.html:278
-#: frontend/templates/frontend/index.html:643
-#: frontend/templates/frontend/index.html:722
+#: frontend/templates/frontend/index.html:289
+#: frontend/templates/frontend/index.html:654
+#: frontend/templates/frontend/index.html:733
 msgid "Wadi Rum"
 msgstr "Wadi Rum"
 
@@ -241,9 +241,9 @@ msgid "Pending"
 msgstr "En attente"
 
 #: dashboard/templates/dashboard/home.html:340
-#: frontend/templates/frontend/index.html:260
-#: frontend/templates/frontend/index.html:640
-#: frontend/templates/frontend/index.html:721
+#: frontend/templates/frontend/index.html:271
+#: frontend/templates/frontend/index.html:651
+#: frontend/templates/frontend/index.html:732
 msgid "Namib Desert"
 msgstr "Désert du Namib"
 
@@ -315,51 +315,55 @@ msgstr "Desert Mirage Safaris | "
 msgid "Luxury Desert Adventures"
 msgstr "Aventures de luxe dans le désert"
 
-#: frontend/templates/frontend/index.html:61
-#: frontend/templates/frontend/index.html:707
+#: frontend/templates/frontend/index.html:65
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
+
+#: frontend/templates/frontend/index.html:72
+#: frontend/templates/frontend/index.html:718
 msgid "Home"
 msgstr "Accueil"
 
-#: frontend/templates/frontend/index.html:64
-#: frontend/templates/frontend/index.html:708
+#: frontend/templates/frontend/index.html:75
+#: frontend/templates/frontend/index.html:719
 msgid "About"
 msgstr "A propos"
 
-#: frontend/templates/frontend/index.html:67
-#: frontend/templates/frontend/index.html:709
-#: frontend/templates/frontend/index.html:717
+#: frontend/templates/frontend/index.html:78
+#: frontend/templates/frontend/index.html:720
+#: frontend/templates/frontend/index.html:728
 msgid "Destinations"
 msgstr "Destinations"
 
-#: frontend/templates/frontend/index.html:70
-#: frontend/templates/frontend/index.html:710
+#: frontend/templates/frontend/index.html:81
+#: frontend/templates/frontend/index.html:721
 msgid "Meals"
 msgstr "Repas"
 
-#: frontend/templates/frontend/index.html:73
-#: frontend/templates/frontend/index.html:711
+#: frontend/templates/frontend/index.html:84
+#: frontend/templates/frontend/index.html:722
 msgid "Animals"
 msgstr "Animaux"
 
-#: frontend/templates/frontend/index.html:76
+#: frontend/templates/frontend/index.html:87
 msgid "Reviews"
 msgstr "Avis"
 
-#: frontend/templates/frontend/index.html:79
-#: frontend/templates/frontend/index.html:712
+#: frontend/templates/frontend/index.html:90
+#: frontend/templates/frontend/index.html:723
 msgid "Contact"
 msgstr "Contact"
 
-#: frontend/templates/frontend/index.html:82
+#: frontend/templates/frontend/index.html:93
 #: user_auth/templates/user_auth/login.html:5
 msgid "Login"
 msgstr "Connexion"
 
-#: frontend/templates/frontend/index.html:98
+#: frontend/templates/frontend/index.html:109
 msgid "Discover the Magic of the Desert"
 msgstr "Découvrez la Magie du Désert"
 
-#: frontend/templates/frontend/index.html:101
+#: frontend/templates/frontend/index.html:112
 msgid ""
 "Experience unforgettable adventures in the world's most breathtaking deserts"
 " with our expert guides and luxury camps."
@@ -367,15 +371,15 @@ msgstr ""
 "Vivez des aventures inoubliables dans les déserts les plus époustouflants du"
 " monde avec nos guides experts et nos camps de luxe."
 
-#: frontend/templates/frontend/index.html:103
+#: frontend/templates/frontend/index.html:114
 msgid "Book Your Adventure"
 msgstr "Réservez Votre Aventure"
 
-#: frontend/templates/frontend/index.html:117
+#: frontend/templates/frontend/index.html:128
 msgid "Our Story"
 msgstr "Notre Histoire"
 
-#: frontend/templates/frontend/index.html:120
+#: frontend/templates/frontend/index.html:131
 msgid ""
 "Founded in 2010, Desert Mirage Safaris has been creating extraordinary "
 "desert experiences for over a decade. Our team of local experts knows the "
@@ -385,32 +389,32 @@ msgstr ""
 "extraordinaires depuis plus d'une décennie. Notre équipe d'experts locaux "
 "connaît les joyaux cachés des déserts les plus magnifiques du monde."
 
-#: frontend/templates/frontend/index.html:127
+#: frontend/templates/frontend/index.html:138
 msgid "Award Winning"
 msgstr "Vainqueur de prix"
 
-#: frontend/templates/frontend/index.html:130
+#: frontend/templates/frontend/index.html:141
 msgid "5-time 'Best Safari' winner"
 msgstr "Vainqueur de cinq fois du prix 'Meilleur Safari'"
 
-#: frontend/templates/frontend/index.html:139
-#: frontend/templates/frontend/index.html:198
+#: frontend/templates/frontend/index.html:150
+#: frontend/templates/frontend/index.html:209
 msgid "Expert Guides"
 msgstr "Guides Experts"
 
-#: frontend/templates/frontend/index.html:142
+#: frontend/templates/frontend/index.html:153
 msgid "Local knowledge, global standards"
 msgstr "Connaissance locale, normes mondiales"
 
-#: frontend/templates/frontend/index.html:152
+#: frontend/templates/frontend/index.html:163
 msgid "About us image"
 msgstr "Image à propos de nous"
 
-#: frontend/templates/frontend/index.html:164
+#: frontend/templates/frontend/index.html:175
 msgid "Why Choose Desert Mirage?"
 msgstr "Pourquoi choisir Mirage du Désert ?"
 
-#: frontend/templates/frontend/index.html:167
+#: frontend/templates/frontend/index.html:178
 msgid ""
 "We go beyond the ordinary to deliver extraordinary desert experiences you'll"
 " cherish forever."
@@ -418,11 +422,11 @@ msgstr ""
 "Nous allons au-delà de l'ordinaire pour offrir des expériences "
 "extraordinaires dans le désert que vous chérirez pour toujours."
 
-#: frontend/templates/frontend/index.html:176
+#: frontend/templates/frontend/index.html:187
 msgid "Exclusive Locations"
 msgstr "Emplacements Exclusifs"
 
-#: frontend/templates/frontend/index.html:179
+#: frontend/templates/frontend/index.html:190
 msgid ""
 "Access to private desert camps and hidden oases unavailable to most "
 "travelers."
@@ -430,11 +434,11 @@ msgstr ""
 "Accès à des camps privés dans le désert et à des oasis cachées non "
 "disponibles pour la plupart des voyageurs."
 
-#: frontend/templates/frontend/index.html:187
+#: frontend/templates/frontend/index.html:198
 msgid "Luxury Accommodations"
 msgstr "Hébergements de Luxe"
 
-#: frontend/templates/frontend/index.html:190
+#: frontend/templates/frontend/index.html:201
 msgid ""
 "Spend your nights in luxurious tents with all modern amenities under the "
 "stars."
@@ -442,7 +446,7 @@ msgstr ""
 "Passez vos nuits dans des tentes luxueuses avec toutes les commodités "
 "modernes sous les étoiles."
 
-#: frontend/templates/frontend/index.html:201
+#: frontend/templates/frontend/index.html:212
 msgid ""
 "Our guides have 10+ years experience and deep knowledge of desert "
 "ecosystems."
@@ -450,11 +454,11 @@ msgstr ""
 "Nos guides ont une expérience de 10+ ans et une connaissance approfondie des"
 " écosystèmes désertiques."
 
-#: frontend/templates/frontend/index.html:209
+#: frontend/templates/frontend/index.html:220
 msgid "Sustainable Travel"
 msgstr "Voyage Durable"
 
-#: frontend/templates/frontend/index.html:212
+#: frontend/templates/frontend/index.html:223
 msgid ""
 "We're committed to eco-friendly practices that protect these fragile "
 "environments."
@@ -462,11 +466,11 @@ msgstr ""
 "Nous sommes engagés dans des pratiques respectueuses de l'environnement qui "
 "protègent ces milieux fragiles."
 
-#: frontend/templates/frontend/index.html:226
+#: frontend/templates/frontend/index.html:237
 msgid "Our Featured Destinations"
 msgstr "Nos Destinations en vedette"
 
-#: frontend/templates/frontend/index.html:229
+#: frontend/templates/frontend/index.html:240
 msgid ""
 "Explore the world's most magnificent deserts with our expertly crafted "
 "itineraries."
@@ -474,96 +478,96 @@ msgstr ""
 "Explorez les déserts les plus magnifiques du monde avec nos itinéraires "
 "expertement conçus."
 
-#: frontend/templates/frontend/index.html:238
+#: frontend/templates/frontend/index.html:249
 msgid "Sahara Desert dunes at sunset"
 msgstr "Dunes du désert du Sahara au coucher du soleil"
 
-#: frontend/templates/frontend/index.html:242
-#: frontend/templates/frontend/index.html:637
-#: frontend/templates/frontend/index.html:720
+#: frontend/templates/frontend/index.html:253
+#: frontend/templates/frontend/index.html:648
+#: frontend/templates/frontend/index.html:731
 msgid "Sahara Desert"
 msgstr "Désert du Sahara"
 
-#: frontend/templates/frontend/index.html:245
+#: frontend/templates/frontend/index.html:256
 msgid "Morocco & Algeria"
 msgstr "Maroc & Algérie"
 
-#: frontend/templates/frontend/index.html:247
-#: frontend/templates/frontend/index.html:265
-#: frontend/templates/frontend/index.html:283
-#: frontend/templates/frontend/index.html:301
-#: frontend/templates/frontend/index.html:319
-#: frontend/templates/frontend/index.html:337
+#: frontend/templates/frontend/index.html:258
+#: frontend/templates/frontend/index.html:276
+#: frontend/templates/frontend/index.html:294
+#: frontend/templates/frontend/index.html:312
+#: frontend/templates/frontend/index.html:330
+#: frontend/templates/frontend/index.html:348
 msgid "Explore"
 msgstr "Explorer"
 
-#: frontend/templates/frontend/index.html:256
+#: frontend/templates/frontend/index.html:267
 msgid "Red sand dunes of Namib Desert"
 msgstr "Dunes de sable rouge du désert du Namib"
 
-#: frontend/templates/frontend/index.html:263
+#: frontend/templates/frontend/index.html:274
 msgid "Namibia"
 msgstr "Namibie"
 
-#: frontend/templates/frontend/index.html:274
+#: frontend/templates/frontend/index.html:285
 msgid "Rock formations in Wadi Rum"
 msgstr "Formations rocheuses dans Wadi Rum"
 
-#: frontend/templates/frontend/index.html:281
+#: frontend/templates/frontend/index.html:292
 msgid "Jordan"
 msgstr "Jordanie"
 
-#: frontend/templates/frontend/index.html:292
+#: frontend/templates/frontend/index.html:303
 msgid "Salt flats in Atacama Desert"
 msgstr "Salars dans le désert d'Atacama"
 
-#: frontend/templates/frontend/index.html:296
-#: frontend/templates/frontend/index.html:646
-#: frontend/templates/frontend/index.html:723
+#: frontend/templates/frontend/index.html:307
+#: frontend/templates/frontend/index.html:657
+#: frontend/templates/frontend/index.html:734
 msgid "Atacama Desert"
 msgstr "Désert d'Atacama"
 
-#: frontend/templates/frontend/index.html:299
+#: frontend/templates/frontend/index.html:310
 msgid "Chile"
 msgstr "Chili"
 
-#: frontend/templates/frontend/index.html:310
+#: frontend/templates/frontend/index.html:321
 msgid "Sand dunes in Arabian Desert"
 msgstr "Dunes de sable dans le désert d'Arabie"
 
-#: frontend/templates/frontend/index.html:314
-#: frontend/templates/frontend/index.html:649
-#: frontend/templates/frontend/index.html:724
+#: frontend/templates/frontend/index.html:325
+#: frontend/templates/frontend/index.html:660
+#: frontend/templates/frontend/index.html:735
 msgid "Arabian Desert"
 msgstr "Désert d'Arabie"
 
-#: frontend/templates/frontend/index.html:317
+#: frontend/templates/frontend/index.html:328
 msgid "UAE & Oman"
 msgstr "EAU & Oman"
 
-#: frontend/templates/frontend/index.html:328
+#: frontend/templates/frontend/index.html:339
 msgid "Rocky landscape of Gobi Desert"
 msgstr "Paysage rocheux du désert de Gobi"
 
-#: frontend/templates/frontend/index.html:332
-#: frontend/templates/frontend/index.html:652
-#: frontend/templates/frontend/index.html:725
+#: frontend/templates/frontend/index.html:343
+#: frontend/templates/frontend/index.html:663
+#: frontend/templates/frontend/index.html:736
 msgid "Gobi Desert"
 msgstr "Désert de Gobi"
 
-#: frontend/templates/frontend/index.html:335
+#: frontend/templates/frontend/index.html:346
 msgid "Mongolia"
 msgstr "Mongolie"
 
-#: frontend/templates/frontend/index.html:343
+#: frontend/templates/frontend/index.html:354
 msgid "View All Destinations"
 msgstr "Voir Toutes les Destinations"
 
-#: frontend/templates/frontend/index.html:354
+#: frontend/templates/frontend/index.html:365
 msgid "Culinary Experiences"
 msgstr "Expériences Culinaires"
 
-#: frontend/templates/frontend/index.html:357
+#: frontend/templates/frontend/index.html:368
 msgid ""
 "Indulge in authentic desert cuisine prepared by our expert chefs using "
 "traditional methods."
@@ -571,61 +575,61 @@ msgstr ""
 "Dégustez une cuisine authentique du désert préparée par nos chefs experts "
 "utilisant des méthodes traditionnelles."
 
-#: frontend/templates/frontend/index.html:365
+#: frontend/templates/frontend/index.html:376
 msgid "Desert Feast"
 msgstr "Festin du Désert"
 
-#: frontend/templates/frontend/index.html:369
+#: frontend/templates/frontend/index.html:380
 msgid "Bedouin Feast"
 msgstr "Festin Bédouin"
 
-#: frontend/templates/frontend/index.html:372
+#: frontend/templates/frontend/index.html:383
 msgid ""
 "Traditional meal cooked in underground ovens with lamb, rice and spices."
 msgstr ""
 "Repas traditionnel cuit dans des fours souterrains avec de l'agneau, du riz "
 "et des épices."
 
-#: frontend/templates/frontend/index.html:380
+#: frontend/templates/frontend/index.html:391
 msgid "Desert Breakfast"
 msgstr "Petit-déjeuner dans le désert"
 
-#: frontend/templates/frontend/index.html:384
+#: frontend/templates/frontend/index.html:395
 msgid "Sunrise Breakfast"
 msgstr "Petit-déjeuner au lever du soleil"
 
-#: frontend/templates/frontend/index.html:387
+#: frontend/templates/frontend/index.html:398
 msgid "Fresh dates, breads, honey and coffee served at dawn on the dunes."
 msgstr "Dattes fraîches, pains, miel et café servis à l'aube sur les dunes."
 
-#: frontend/templates/frontend/index.html:395
+#: frontend/templates/frontend/index.html:406
 msgid "Desert BBQ"
 msgstr "Barbecue dans le désert"
 
-#: frontend/templates/frontend/index.html:399
+#: frontend/templates/frontend/index.html:410
 msgid "Starlight BBQ"
 msgstr "Barbecue à la belle étoile"
 
-#: frontend/templates/frontend/index.html:402
+#: frontend/templates/frontend/index.html:413
 msgid "Grilled meats and vegetables under the Milky Way with live music."
 msgstr "Viandes et légumes grillés sous la Voie lactée avec musique live."
 
-#: frontend/templates/frontend/index.html:410
-#: frontend/templates/frontend/index.html:414
+#: frontend/templates/frontend/index.html:421
+#: frontend/templates/frontend/index.html:425
 msgid "Tea Ceremony"
 msgstr "Cérémonie du thé"
 
-#: frontend/templates/frontend/index.html:417
+#: frontend/templates/frontend/index.html:428
 msgid "Traditional mint tea preparation with a nomadic family in their tent."
 msgstr ""
 "Préparation traditionnelle du thé à la menthe avec une famille nomade dans "
 "leur tente."
 
-#: frontend/templates/frontend/index.html:432
+#: frontend/templates/frontend/index.html:443
 msgid "Desert Wildlife"
 msgstr "Faune du désert"
 
-#: frontend/templates/frontend/index.html:435
+#: frontend/templates/frontend/index.html:446
 msgid ""
 "Meet the incredible creatures that call these harsh yet beautiful landscapes"
 " home."
@@ -633,15 +637,15 @@ msgstr ""
 "Rencontrez les créatures incroyables qui habitent ces paysages rudes mais "
 "magnifiques."
 
-#: frontend/templates/frontend/index.html:443
+#: frontend/templates/frontend/index.html:454
 msgid "Fennec Fox in natural habitat"
 msgstr "Fennec Fox in natural habitat"
 
-#: frontend/templates/frontend/index.html:447
+#: frontend/templates/frontend/index.html:458
 msgid "Fennec Fox"
 msgstr "Fennec Fox"
 
-#: frontend/templates/frontend/index.html:450
+#: frontend/templates/frontend/index.html:461
 msgid ""
 "The smallest fox species with distinctive large ears that help dissipate "
 "heat."
@@ -649,79 +653,79 @@ msgstr ""
 "La plus petite espèce de renard, avec ses oreilles distinctement grandes qui"
 " aident à dissiper la chaleur."
 
-#: frontend/templates/frontend/index.html:452
-#: frontend/templates/frontend/index.html:469
-#: frontend/templates/frontend/index.html:486
-#: frontend/templates/frontend/index.html:503
+#: frontend/templates/frontend/index.html:463
+#: frontend/templates/frontend/index.html:480
+#: frontend/templates/frontend/index.html:497
+#: frontend/templates/frontend/index.html:514
 msgid "Learn More"
 msgstr "En savoir plus"
 
-#: frontend/templates/frontend/index.html:460
+#: frontend/templates/frontend/index.html:471
 msgid "Dromedary camel in desert"
 msgstr "Dromedary camel in desert"
 
-#: frontend/templates/frontend/index.html:464
+#: frontend/templates/frontend/index.html:475
 msgid "Dromedary Camel"
 msgstr "Dromedary Camel"
 
-#: frontend/templates/frontend/index.html:467
+#: frontend/templates/frontend/index.html:478
 msgid "The iconic 'ship of the desert' that can go weeks without water."
 msgstr ""
 "L'emblématique 'vaisseau du désert qui peut tenir des semaines sans eau."
 
-#: frontend/templates/frontend/index.html:477
+#: frontend/templates/frontend/index.html:488
 msgid "Desert hedgehog curled up"
 msgstr "Desert hedgehog curled up"
 
-#: frontend/templates/frontend/index.html:481
+#: frontend/templates/frontend/index.html:492
 msgid "Desert Hedgehog"
 msgstr "Desert Hedgehog"
 
-#: frontend/templates/frontend/index.html:484
+#: frontend/templates/frontend/index.html:495
 msgid "Nocturnal insectivore that curls into a spiny ball when threatened."
 msgstr ""
 "Insectivore nocturne, qui se roule en une boule d'épines lorsqu'il est "
 "menacé."
 
-#: frontend/templates/frontend/index.html:494
+#: frontend/templates/frontend/index.html:505
 msgid "Sand cat in the wild"
 msgstr "Chat des sables dans la nature"
 
-#: frontend/templates/frontend/index.html:498
+#: frontend/templates/frontend/index.html:509
 msgid "Sand Cat"
 msgstr "Chat des sables"
 
-#: frontend/templates/frontend/index.html:501
+#: frontend/templates/frontend/index.html:512
 msgid "The only cat species living primarily in true deserts with furry paws."
 msgstr ""
 "La seule espèce de chat vivant principalement dans de vrais déserts avec des"
 " pattes poilues."
 
-#: frontend/templates/frontend/index.html:517
+#: frontend/templates/frontend/index.html:528
 msgid "What Our Travelers Say"
 msgstr "Ce Que Disent Nos Voyageurs"
 
-#: frontend/templates/frontend/index.html:520
+#: frontend/templates/frontend/index.html:531
 msgid "Don't just take our word for it - hear from our adventurous guests."
 msgstr ""
 "Ne vous contentez pas de nous croire sur parole - écoutez ce que disent nos "
 "invités aventureux."
 
-#: frontend/templates/frontend/index.html:530
-#: frontend/templates/frontend/index.html:535
-#: frontend/templates/frontend/index.html:545
-#: frontend/templates/frontend/index.html:550
-#: frontend/templates/frontend/index.html:560
-#: frontend/templates/frontend/index.html:565
-#: frontend/templates/frontend/index.html:575
-#: frontend/templates/frontend/index.html:580
+#: frontend/templates/frontend/index.html:541
+#: frontend/templates/frontend/index.html:546
+#: frontend/templates/frontend/index.html:556
+#: frontend/templates/frontend/index.html:561
+#: frontend/templates/frontend/index.html:571
+#: frontend/templates/frontend/index.html:576
+#: frontend/templates/frontend/index.html:586
+#: frontend/templates/frontend/index.html:591
 msgid "Sarah J."
 msgstr "Sarah J."
 
-#: frontend/templates/frontend/index.html:538
-#: frontend/templates/frontend/index.html:553
-#: frontend/templates/frontend/index.html:568
-#: frontend/templates/frontend/index.html:583
+#: frontend/templates/frontend/index.html:549
+#: frontend/templates/frontend/index.html:564
+#: frontend/templates/frontend/index.html:579
+#: frontend/templates/frontend/index.html:594
 msgid ""
 "The Sahara experience was beyond anything I imagined. The luxury camp was "
 "exquisite, and our guide Mohamed knew every secret of the desert. Waking up "
@@ -732,54 +736,54 @@ msgstr ""
 "secrets du désert. Se réveiller au lever du soleil sur les dunes est quelque"
 " chose que je n'oublierai jamais."
 
-#: frontend/templates/frontend/index.html:600
+#: frontend/templates/frontend/index.html:611
 msgid "Ready for Your Adventure?"
 msgstr "Prêt pour votre aventure ?"
 
-#: frontend/templates/frontend/index.html:603
+#: frontend/templates/frontend/index.html:614
 msgid "Contact us to start planning your personalized desert experience."
 msgstr ""
 "Contactez-nous pour commencer à planifier votre expérience personnalisée "
 "dans le désert."
 
-#: frontend/templates/frontend/index.html:615
+#: frontend/templates/frontend/index.html:626
 msgid "Your Name"
 msgstr "Votre Nom"
 
-#: frontend/templates/frontend/index.html:621
-#: frontend/templates/frontend/index.html:739
+#: frontend/templates/frontend/index.html:632
+#: frontend/templates/frontend/index.html:750
 msgid "Your Email"
 msgstr "Votre Email"
 
-#: frontend/templates/frontend/index.html:629
+#: frontend/templates/frontend/index.html:640
 msgid "Phone Number"
 msgstr "Numéro de Téléphone"
 
-#: frontend/templates/frontend/index.html:634
+#: frontend/templates/frontend/index.html:645
 msgid "Select Destination"
 msgstr "Sélectionnez la Destination"
 
-#: frontend/templates/frontend/index.html:660
+#: frontend/templates/frontend/index.html:671
 msgid "Your Message"
 msgstr "Votre Message"
 
-#: frontend/templates/frontend/index.html:664
+#: frontend/templates/frontend/index.html:675
 msgid "Send Message"
 msgstr "Envoyer le Message"
 
-#: frontend/templates/frontend/index.html:672
+#: frontend/templates/frontend/index.html:683
 msgid "+1 (555) 123-4567"
 msgstr "+1 (555) 123-4567"
 
-#: frontend/templates/frontend/index.html:676
+#: frontend/templates/frontend/index.html:687
 msgid "info@desertmirage.com"
 msgstr "info@desertmirage.com"
 
-#: frontend/templates/frontend/index.html:680
+#: frontend/templates/frontend/index.html:691
 msgid "123 Dune Rd, Sedona, AZ"
 msgstr "123 Dune Rd, Sedona, AZ"
 
-#: frontend/templates/frontend/index.html:699
+#: frontend/templates/frontend/index.html:710
 msgid ""
 "Creating unforgettable desert adventures with a commitment to sustainability"
 " and authentic cultural experiences since 2010."
@@ -787,45 +791,45 @@ msgstr ""
 "Créer des aventures inoubliables dans le désert avec un engagement envers la"
 " durabilité et des expériences culturelles authentiques depuis 2010."
 
-#: frontend/templates/frontend/index.html:704
+#: frontend/templates/frontend/index.html:715
 msgid "Quick Links"
 msgstr "Liens Rapides"
 
-#: frontend/templates/frontend/index.html:730
+#: frontend/templates/frontend/index.html:741
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: frontend/templates/frontend/index.html:733
+#: frontend/templates/frontend/index.html:744
 msgid "Subscribe for exclusive offers and desert travel tips."
 msgstr ""
 "Inscrivez-vous pour des offres exclusives et des conseils de voyage dans le "
 "désert."
 
-#: frontend/templates/frontend/index.html:741
+#: frontend/templates/frontend/index.html:752
 msgid "Subscribe"
 msgstr "Inscrivez-vous"
 
-#: frontend/templates/frontend/index.html:751
+#: frontend/templates/frontend/index.html:762
 msgid "© 2023 Desert Mirage Safaris. All rights reserved."
 msgstr "© 2023 Desert Mirage Safaris. Tous droits réservés."
 
-#: frontend/templates/frontend/index.html:756
+#: frontend/templates/frontend/index.html:767
 msgid "Privacy Policy"
 msgstr "Politique de Confidentialité"
 
-#: frontend/templates/frontend/index.html:757
+#: frontend/templates/frontend/index.html:768
 msgid "Terms of Service"
 msgstr "Conditions d'Utilisation"
 
-#: frontend/templates/frontend/index.html:774
+#: frontend/templates/frontend/index.html:785
 msgid "English"
 msgstr "Anglais"
 
-#: frontend/templates/frontend/index.html:777
+#: frontend/templates/frontend/index.html:788
 msgid "العربية"
 msgstr "العربية"
 
-#: frontend/templates/frontend/index.html:780
+#: frontend/templates/frontend/index.html:791
 msgid "Français"
 msgstr "Français"
 
@@ -897,7 +901,7 @@ msgstr "Se connecter"
 #: user_auth/templates/user_auth/login.html:35
 #, fuzzy
 #| msgid "Email Address"
-msgid "E-mail Adress"
+msgid "Email Adress"
 msgstr "Adresse E-mail"
 
 #: user_auth/templates/user_auth/login.html:38
@@ -908,42 +912,42 @@ msgstr "Mot de passe"
 msgid "Forgot password?"
 msgstr "Mot de passe oublié?"
 
-#: user_auth/views/auth.py:30 user_auth/views/auth.py:82
+#: user_auth/views/auth.py:31 user_auth/views/auth.py:83
 msgid "Please enter a valid email address"
 msgstr "Veuillez entrer une adresse e-mail valide"
 
-#: user_auth/views/auth.py:34 user_auth/views/auth.py:77
+#: user_auth/views/auth.py:35 user_auth/views/auth.py:78
 msgid "All fields are required"
 msgstr "Tous les champs sont obligatoires"
 
-#: user_auth/views/auth.py:38 user_auth/views/auth.py:88
+#: user_auth/views/auth.py:39 user_auth/views/auth.py:89
 msgid "Password must be at least 4 characters"
 msgstr "Le mot de passe doit comporter au moins 4 caractères"
 
-#: user_auth/views/auth.py:51
+#: user_auth/views/auth.py:52
 msgid ""
 "Your account is not active. Please check your email for activation link"
 msgstr ""
 "Votre compte n'est pas actif. Veuillez vérifier votre email pour le lien "
 "d'activation"
 
-#: user_auth/views/auth.py:53
+#: user_auth/views/auth.py:54
 msgid "Invalid email address or password"
 msgstr "Adresse email ou mot de passe invalide"
 
-#: user_auth/views/auth.py:85
+#: user_auth/views/auth.py:86
 msgid "Passwords do not match"
 msgstr "Les mots de passe ne correspondent pas"
 
-#: user_auth/views/auth.py:92
+#: user_auth/views/auth.py:93
 msgid "An account with this email already exists"
 msgstr "Un compte avec cet email existe déjà"
 
-#: user_auth/views/auth.py:116
+#: user_auth/views/auth.py:117
 msgid "Confirm your email address"
 msgstr "Confirmez votre adresse email"
 
-#: user_auth/views/auth.py:126
+#: user_auth/views/auth.py:127
 msgid ""
 "Account created successfully! Please check your email to confirm your "
 "account."
@@ -951,17 +955,17 @@ msgstr ""
 "Compte créé avec succès! Veuillez vérifier votre email pour confirmer votre "
 "compte."
 
-#: user_auth/views/auth.py:145
+#: user_auth/views/auth.py:146
 msgid "The confirmation link has expired. Please request a new one."
 msgstr "Le lien de confirmation a expiré. Veuillez en demander un nouveau."
 
-#: user_auth/views/auth.py:154
+#: user_auth/views/auth.py:155
 msgid "Your email has been successfully confirmed! You can now log in."
 msgstr ""
 "Votre email a été confirmé avec succès! Vous pouvez maintenant vous "
 "connecter."
 
-#: user_auth/views/auth.py:160
+#: user_auth/views/auth.py:161
 msgid "Invalid confirmation link. Please try again."
 msgstr "Lien de confirmation invalide. Veuillez réessayer."
 
