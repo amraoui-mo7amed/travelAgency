@@ -180,12 +180,14 @@ LOGIN_REDIRECT_URL = 'dash:home'  # Use your named URL pattern
 AUTH_USER_MODEL = 'user_auth.CustomUser'
 
 
-# Cloudflare & HTTPS settings
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True  # Redirect HTTP → HTTPS
-SESSION_COOKIE_SECURE = True  # Send session cookies only over HTTPS
-CSRF_COOKIE_SECURE = True  # Send CSRF cookies only over HTTPS
+# DISABLE all HTTPS enforcement
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+
+# Keep these to prevent warnings
 CSRF_TRUSTED_ORIGINS = [
-    'https://travel-agency.m07amed.uk',
-    'https://www.travel-agency.m07amed.uk',
+    'https://travel-agency.m07amed.uk',  # For when you test production-like configs
+    'http://localhost:8000',             # Add this for development
+    'http://127.0.0.1:8000'             # Add this for development
 ]
