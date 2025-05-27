@@ -1,0 +1,132 @@
+{
+    "destinations": [
+        {
+            "name_fr": "La région de l'Atakor et les alentours",
+            "name_en": "The Atakor region and surroundings",
+            "name_ar": "منطقة الأتاكور ومحيطها",
+            "image_path" : "images/destinations/l’Atakor_et_les_alentours.jpeg"
+        },
+        {
+            "name_fr" : "Tassili N’Ahaggar et les alentours",
+            "name_en" : "Tassili N’Ahaggar and surroundings",
+            "name_ar" : "تاسيلي ن أجاجر ومحيطها",
+            "image_path" : "images/destinations/Tassili_N’Ahaggar_et_les_alentours.jpeg"
+        }, 
+        {
+            "name_fr" : "Tassili N'Ajjer ", 
+            "name_en" : "Tassili N'Ajjer",
+            "name_ar" : "تاسيلي نأجر",
+            "image_path" : "images/destinations/Tassili_N'Ajjer.jpeg"
+        },
+        {
+            "name_fr" : "Tassili Ahnet",
+            "name_en" : "Tassili Ahnet",
+            "name_ar" : "تاسيلي أحنات",
+            "image_path" : "images/destinations/Tassili_Ahnet.jpeg"
+        }
+    ], 
+    "food" : [
+        {
+            "image_path" : "images/food/1.jpeg"
+        },
+        {
+            "image_path" : "images/food/2.jpeg"
+        },
+        {
+            "image_path" : "images/food/3.jpeg"
+        },
+        {
+            "image_path" : "images/food/4.jpeg"
+        },
+        {
+            "image_path" : "images/food/5.jpeg"
+        },
+        {
+            "image_path" : "images/food/6.jpeg"
+        }
+    ],
+    "animals" : [
+        {
+            "image_path" : "images/animals/1.jpeg"
+        },
+        {
+            "image_path" : "images/animals/2.jpeg"
+        },
+        {
+            "image_path" : "images/animals/3.jpeg"
+        },
+        {
+            "image_path" : "images/animals/4.jpeg"
+        },
+        {
+            "image_path" : "images/animals/5.jpeg"
+        },
+        {
+            "image_path" : "images/animals/6.jpeg"
+        },
+        {
+            "image_path" : "images/animals/7.jpeg"
+        },
+        {
+            "image_path" : "images/animals/8.jpeg"
+        }
+    ],
+    "art" : [
+        {
+            "image_path" : "images/art/1.jpeg"
+        },
+        {
+            "image_path" : "images/art/2.jpeg"
+        },
+        {
+            "image_path" : "images/art/3.jpeg"
+        },
+        {
+            "image_path" : "images/art/4.jpeg"
+        },
+        {
+            "image_path" : "images/art/5.jpeg"
+        },
+        {
+            "image_path" : "images/art/6.jpeg"
+        },
+        {
+            "image_path" : "images/art/7.jpeg"
+        },
+        {
+            "image_path" : "images/art/8.jpeg"
+        },
+        {
+            "image_path" : "images/art/9.jpeg"
+        },
+        {
+            "image_path" : "images/art/10.jpeg"
+        },
+        {
+            "image_path" : "images/art/11.jpeg"
+        },
+        {
+            "image_path" : "images/art/12.jpeg"
+        }
+    ],
+    "clients" : [
+        {
+            "image_path" : "images/clients/1.jpeg"
+        },
+        {
+            "image_path" : "images/clients/2.jpeg"
+        },
+        {
+            "image_path" : "images/clients/3.jpeg"
+        },
+        {
+            "image_path" : "images/clients/4.jpeg"
+        },
+        {
+            "image_path" : "images/clients/5.jpeg"
+        },
+        {
+            "image_path" : "images/clients/6.jpeg"
+        }
+    ]
+}

@@ -30,9 +30,9 @@ body.rtl {
 }
 
 /* Typography with RTL support */
-body.ltr h1, 
-body.ltr h2, 
-body.ltr h3, 
+body.ltr h1,
+body.ltr h2,
+body.ltr h3,
 body.ltr h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -113,6 +113,7 @@ body.rtl .social-icons a {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -124,6 +125,7 @@ body.rtl .social-icons a {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -134,9 +136,11 @@ body.rtl .social-icons a {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -147,6 +151,7 @@ body.rtl .social-icons a {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -195,21 +200,25 @@ body.rtl .animate-on-scroll {
     border-radius: 4px;
     border: 1px solid #c3e6cb;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(58, 44, 42, 0.7), rgba(58, 44, 42, 0.7)), 
-                url('https://images.unsplash.com/photo-1518544866330-95a2bec01e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(rgba(58, 44, 42, 0.7), rgba(58, 44, 42, 0.7)),
+        url('https://images.unsplash.com/photo-1518544866330-95a2bec01e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -324,8 +333,8 @@ h1, h2, h3, h4 {
 /* Why Choose Us */
 .why-us {
     padding: 100px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80');
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -396,8 +405,8 @@ h1, h2, h3, h4 {
 /* Meals Section */
 .meals {
     padding: 100px 0;
-    background: linear-gradient(rgba(58, 44, 42, 0.9), rgba(58, 44, 42, 0.9)), 
-                url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(rgba(58, 44, 42, 0.9), rgba(58, 44, 42, 0.9)),
+        url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
     color: white;
@@ -424,12 +433,16 @@ h1, h2, h3, h4 {
 }
 
 /* Animals Section */
-.animals {
+.animals,
+.art,
+.clients {
     padding: 100px 0;
     background-color: var(--light);
 }
 
-.animal-card {
+.animal-card,
+.art-card,
+.client-card {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -438,24 +451,29 @@ h1, h2, h3, h4 {
     margin-bottom: 30px;
 }
 
-.animal-card:hover {
+.animal-card:hover,
+.art-card:hover,
+.client-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.animal-img {
+.animal-img,
+.art-img,
+.client-img {
     height: 250px;
     width: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
-.animal-card:hover .animal-img {
+.animal-card:hover .animal-img,
+.art-card:hover .art-img,
+.client-card:hover .client-img {
     transform: scale(1.05);
 }
 
-.animal-card p 
-{
+.animal-card p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -464,8 +482,8 @@ h1, h2, h3, h4 {
 /* Testimonials */
 .testimonials {
     padding: 100px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                url('https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -556,7 +574,7 @@ textarea.form-control {
 .footer {
     background-color: var(--secondary);
     color: white;
-    padding: 50px 0 20px;
+    padding: 15px;
 }
 
 .footer-links a {
@@ -584,12 +602,12 @@ textarea.form-control {
 /* Language Switcher */
 .language-switcher {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     z-index: 1000;
 }
 
-.language-btn {
+.language-btn, .whatsapp-link {
     background-color: var(--primary);
     color: white;
     border: none;
@@ -620,6 +638,7 @@ body.ltr .language-options {
     overflow: hidden;
     display: none;
 }
+
 body.rtl .language-options {
     position: absolute;
     bottom: 60px;
@@ -630,7 +649,8 @@ body.rtl .language-options {
     overflow: hidden;
     display: none;
 }
- .language-options.show {
+
+.language-options.show {
     display: block !important;
 }
 
@@ -645,6 +665,96 @@ body.rtl .language-options {
     color: var(--primary);
 }
 
+/* WhatsApp Float Styles */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* LTR Positioning */
+body.ltr .whatsapp-float {
+    right: 20px;
+}
+
+/* RTL Positioning */
+body.rtl .whatsapp-float {
+    left: 20px;
+}
+
+.whatsapp-link {
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #128c7e;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-link i {
+    font-size: 24px;
+}
+
+/* LTR Text Spacing */
+body.ltr .whatsapp-text {
+    margin-left: 8px;
+}
+
+/* RTL Text Spacing */
+body.rtl .whatsapp-text {
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+    }
+    
+    body.ltr .whatsapp-float {
+        right: 10px;
+    }
+    
+    body.rtl .whatsapp-float {
+        left: 10px;
+    }
+    
+    .whatsapp-text {
+        display: none;
+    }
+    
+    .whatsapp-link {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.whatsapp-float {
+    animation: float 3s ease-in-out infinite;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .hero h1 {
@@ -656,23 +766,23 @@ body.rtl .language-options {
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero p {
         font-size: 1rem;
     }
-    
+
     .about-img {
         margin-bottom: 30px;
     }
-    
+
     body.rtl .navbar-nav {
         padding-right: 0;
     }
-    
+
     body.rtl .language-switcher {
         left: 10px;
     }
-    
+
     body.ltr .language-switcher {
         right: 10px;
     }
@@ -682,9 +792,116 @@ body.rtl .language-options {
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
 }
 
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.social-link.facebook:hover {
+    background-color: #1877f2;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-link.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-link.youtube:hover {
+    background-color: #ff0000;
+}
+
+.social-link.tiktok:hover {
+    background-color: #000000;
+}
+
+/* RTL Support for Social Links */
+body.rtl .social-links {
+    padding-right: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation for Social Links */
+.social-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover::before {
+    left: 100%;
+}
+
+.social-links .social-link {
+    animation: socialFadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes socialFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation for each social link */
+.social-links .social-link:nth-child(1) { animation-delay: 0.1s; }
+.social-links .social-link:nth-child(2) { animation-delay: 0.2s; }
+.social-links .social-link:nth-child(3) { animation-delay: 0.3s; }
+.social-links .social-link:nth-child(4) { animation-delay: 0.4s; }
+.social-links .social-link:nth-child(5) { animation-delay: 0.5s; }

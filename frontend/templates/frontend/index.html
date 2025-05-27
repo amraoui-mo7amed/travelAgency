@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{% trans "Desert Mirage Safaris | " %}
+        <title>{% trans "Timidoua Travel | " %}
             {% block subtitle %}
                 {% trans "Luxury Desert Adventures" %}
             {% endblock subtitle %}
@@ -54,7 +54,7 @@
         {% block nav %}
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">{% trans "Desert Mirage" %}</a>
+                    <a class="navbar-brand" href="#">{% trans "Timidoua Travel" %}</a>
                     <!-- Navbar Toggler -->
                     <button class="navbar-toggler"
                             type="button"
@@ -81,17 +81,17 @@
                                 <a class="nav-link" href="#meals">{% trans "Meals" %}</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#art">{% trans "Art" %}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#animals">{% trans "Animals" %}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#testimonials">{% trans "Reviews" %}</a>
+                                <a class="nav-link" href="#clients">{% trans "Clients" %}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
-                            </li>
-                            <li class="nav-item">
+                            {% comment %} <li class="nav-item">
                                 <a class="nav-link" href="{% url "user_auth:login" %}">{% trans "Login" %}</a>
-                            </li>
+                            </li> {% endcomment %}
                         </ul>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                             <p class="mb-5">
                                 {% trans "Experience unforgettable adventures in the world's most breathtaking deserts with our expert guides and luxury camps." %}
                             </p>
-                            <a href="#contact" class="btn btn-primary btn-lg">{% trans "Book Your Adventure" %}</a>
+                            <a href="#destinations" class="btn btn-primary btn-lg">{% trans "Book Your Adventure" %}</a>
                         </div>
                     </div>
                 </div>
@@ -242,117 +242,33 @@
                         </div>
                     </div>
                     <div class="row">
-                        <!-- Sahara Desert -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
-                                     alt="{% trans 'Sahara Desert dunes at sunset' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Sahara Desert" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Morocco & Algeria" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
-                                </div>
-                            </div>
-                        </div>
+                        {% for destination in destinations %}
+                            <div class="col-md-6 col-lg-6 mb-4 animate-on-scroll">
+                                <div class="destination-card">
+                                    <img src="{% static destination.image_path %}"
+                                         {% if LANGUAGE_CODE == 'ar' %} alt="{{ destination.name_ar }}" {% elif LANGUAGE_CODE == 'fr' %} alt="{{ destination.name_fr }}" {% else %} alt="{{ destination.name_en }}" {% endif %}
+                                         class="destination-img" />
+                                    <div class="destination-overlay">
+                                        <h4>
+                                            {% if LANGUAGE_CODE == 'ar' %}
+                                                {{ destination.name_ar }}
+                                            {% elif LANGUAGE_CODE == 'fr' %}
+                                                {{ destination.name_fr }}
+                                            {% else %}
+                                                {{ destination.name_en }}
+                                            {% endif %}
 
-                        <!-- Namib Desert -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80"
-                                     alt="{% trans 'Red sand dunes of Namib Desert' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Namib Desert" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Namibia" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
+                                        </h4>
+                                        {% comment %} <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a> {% endcomment %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endfor %}
 
-                        <!-- Wadi Rum -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1558985040-ed4d5029dd50?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     alt="{% trans 'Rock formations in Wadi Rum' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Wadi Rum" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Jordan" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Atacama Desert -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80"
-                                     alt="{% trans 'Salt flats in Atacama Desert' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Atacama Desert" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Chile" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Arabian Desert -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-                                     alt="{% trans 'Sand dunes in Arabian Desert' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Arabian Desert" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "UAE & Oman" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Gobi Desert -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                            <div class="destination-card">
-                                <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                     alt="{% trans 'Rocky landscape of Gobi Desert' %}"
-                                     class="destination-img" />
-                                <div class="destination-overlay">
-                                    <h4>
-                                        {% trans "Gobi Desert" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Mongolia" %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="text-center mt-4 animate-on-scroll">
+                    {% comment %} <div class="text-center mt-4 animate-on-scroll">
                         <a href="#" class="btn btn-primary">{% trans "View All Destinations" %}</a>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
             </section>
 
@@ -362,7 +278,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center mb-5 animate-on-scroll">
                             <h2 class="section-title mb-4">
-                                {% trans "Culinary Experiences" %}
+                                {% trans "Our Meals" %}
                             </h2>
                             <p>
                                 {% trans "Indulge in authentic desert cuisine prepared by our expert chefs using traditional methods." %}
@@ -370,66 +286,58 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="meal-card h-100">
-                                <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                     alt="{% trans 'Desert Feast' %}"
-                                     class="img-fluid meal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Bedouin Feast" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Traditional meal cooked in underground ovens with lamb, rice and spices." %}
-                                    </p>
+                        {% for item in food %}
+                            <div class="col-md-4 col-lg-4 mb-4 animate-on-scroll">
+                                <div class="meal-card h-100">
+                                    <img src="{% static item.image_path %}" class="img-fluid meal-img" />
+                                    {% comment %} <div class="p-4">
+                                        <h4>
+                                            {% trans "Bedouin Feast" %}
+                                        </h4>
+                                        <p>
+                                            {% trans "Traditional meal cooked in underground ovens with lamb, rice and spices." %}
+                                        </p>
+                                    </div> {% endcomment %}
                                 </div>
                             </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <!-- Art section -->
+            <section class="art" id="art">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Desert Art" %}
+                            </h2>
+                            <p>
+                                {% trans "Discover the amazing art of our ancesstors " %}
+                            </p>
                         </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="meal-card h-100">
-                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                     alt="{% trans 'Desert Breakfast' %}"
-                                     class="img-fluid meal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Sunrise Breakfast" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Fresh dates, breads, honey and coffee served at dawn on the dunes." %}
-                                    </p>
+                    </div>
+                    <div class="row">
+                        {% for item in art %}
+                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                                <div class="art-card">
+                                    <img src="{% static item.image_path %}"
+                                         alt="{% trans 'art picture' %}"
+                                         class="art-img" />
+                                    {% comment %} <div class="p-4">
+                                                    <h4>
+                                                        {% trans "Fennec Fox" %}
+                                                    </h4>
+                                                    <p>
+                                                        {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
+                                                    </p>
+                                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                    </div> {% endcomment %}
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="meal-card h-100">
-                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                                     alt="{% trans 'Desert BBQ' %}"
-                                     class="img-fluid meal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Starlight BBQ" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Grilled meats and vegetables under the Milky Way with live music." %}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="meal-card h-100">
-                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80"
-                                     alt="{% trans 'Tea Ceremony' %}"
-                                     class="img-fluid meal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Tea Ceremony" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Traditional mint tea preparation with a nomadic family in their tent." %}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
+
                     </div>
                 </div>
             </section>
@@ -448,79 +356,68 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="animal-card">
-                                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
-                                     alt="{% trans 'Fennec Fox in natural habitat' %}"
-                                     class="animal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Fennec Fox" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                        {% for animal in animals %}
+                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                                <div class="animal-card">
+                                    <img src="{% static animal.image_path %}"
+                                         alt="{% trans 'animal pictrue' %}"
+                                         class="animal-img" />
+                                    {% comment %} <div class="p-4">
+                                        <h4>
+                                            {% trans "Fennec Fox" %}
+                                        </h4>
+                                        <p>
+                                            {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
+                                        </p>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                    </div> {% endcomment %}
                                 </div>
                             </div>
-                        </div>
+                        {% endfor %}
 
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="animal-card">
-                                <img src="https://images.unsplash.com/photo-1646021253221-3a76d2550e7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM2fHx8ZW58MHx8fHx8"
-                                     alt="{% trans 'Dromedary camel in desert' %}"
-                                     class="animal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Dromedary Camel" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "The iconic 'ship of the desert' that can go weeks without water." %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="animal-card">
-                                <img src="https://images.unsplash.com/photo-1622227056993-6e7f88420855?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     alt="{% trans 'Desert hedgehog curled up' %}"
-                                     class="animal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Desert Hedgehog" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "Nocturnal insectivore that curls into a spiny ball when threatened." %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+            <!-- Clients Section -->
+            <section class="clients" id="clients">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                            <h2 class="section-title mb-4">
+                                {% trans "Our Clients" %}
+                            </h2>
+                            <p>
+                                {% trans "Enjoy our with clients gallery ." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for client in clients %}
+                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                                <div class="client-card">
+                                    <img src="{% static client.image_path %}"
+                                         alt="{% trans 'client pictrue' %}"
+                                         class="client-img" />
+                                    {% comment %} <div class="p-4">
+                                        <h4>
+                                            {% trans "Fennec Fox" %}
+                                        </h4>
+                                        <p>
+                                            {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
+                                        </p>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
+                                    </div> {% endcomment %}
                                 </div>
                             </div>
-                        </div>
+                        {% endfor %}
 
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="animal-card">
-                                <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                     alt="{% trans 'Sand cat in the wild' %}"
-                                     class="animal-img" />
-                                <div class="p-4">
-                                    <h4>
-                                        {% trans "Sand Cat" %}
-                                    </h4>
-                                    <p>
-                                        {% trans "The only cat species living primarily in true deserts with furry paws." %}
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Testimonials Section -->
-            <section class="testimonials" id="testimonials">
+            {% comment %} <section class="testimonials" id="testimonials">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center mb-5 animate-on-scroll">
@@ -537,9 +434,7 @@
                             <div class="owl-carousel testimonial-carousel">
                                 <div class="testimonial-card">
                                     <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
-                                             alt="{% trans 'Sarah J.' %}"
-                                             class="testimonial-img me-3" />
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
                                     </div>
                                     <div class="d-flex-flex-column">
                                         <h5 class="mb-1">
@@ -552,9 +447,7 @@
                                 </div>
                                 <div class="testimonial-card">
                                     <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
-                                             alt="{% trans 'Sarah J.' %}"
-                                             class="testimonial-img me-3" />
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
                                     </div>
                                     <div class="d-flex-flex-column">
                                         <h5 class="mb-1">
@@ -567,9 +460,7 @@
                                 </div>
                                 <div class="testimonial-card">
                                     <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
-                                             alt="{% trans 'Sarah J.' %}"
-                                             class="testimonial-img me-3" />
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
                                     </div>
                                     <div class="d-flex-flex-column">
                                         <h5 class="mb-1">
@@ -582,9 +473,7 @@
                                 </div>
                                 <div class="testimonial-card">
                                     <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
-                                             alt="{% trans 'Sarah J.' %}"
-                                             class="testimonial-img me-3" />
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
                                     </div>
                                     <div class="d-flex-flex-column">
                                         <h5 class="mb-1">
@@ -600,10 +489,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> {% endcomment %}
 
             <!-- Contact Section -->
-            <section class="contact" id="contact">
+            {% comment %} <section class="contact" id="contact">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center mb-5 animate-on-scroll">
@@ -694,84 +583,32 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> {% endcomment %}
         {% endblock content %}
 
         <!-- Footer -->
         {% block footer %}
             <footer class="footer">
                 <div class="container">
+                    {% comment %} <hr class="my-5" style="border-color: rgba(255,255,255,0.1);" /> {% endcomment %}
                     <div class="row">
-                        <div class="col-lg-4 mb-5 mb-lg-0 animate-on-scroll">
-                            <h3 class="mb-4">
-                                {% trans "Desert Mirage" %}
-                            </h3>
-                            <p>
-                                {% trans "Creating unforgettable desert adventures with a commitment to sustainability and authentic cultural experiences since 2010." %}
+                        <div class="col-md-12 text-center text-md-start">
+                            <p class="mb-0 text-center">
+                                {% trans "© 2025 Timidoua Voyage . All rights reserved." %}
                             </p>
-                        </div>
-                        <div class="col-lg-2 col-md-6 mb-5 mb-md-0 animate-on-scroll">
-                            <h4 class="mb-4">
-                                {% trans "Quick Links" %}
-                            </h4>
-                            <div class="footer-links d-flex flex-column">
-                                <a href="#home">{% trans "Home" %}</a>
-                                <a href="#about">{% trans "About" %}</a>
-                                <a href="#destinations">{% trans "Destinations" %}</a>
-                                <a href="#meals">{% trans "Meals" %}</a>
-                                <a href="#animals">{% trans "Animals" %}</a>
-                                <a href="#contact">{% trans "Contact" %}</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-5 mb-md-0 animate-on-scroll">
-                            <h4 class="mb-4">
-                                {% trans "Destinations" %}
-                            </h4>
-                            <div class="footer-links d-flex flex-column">
-                                <a href="#">{% trans "Sahara Desert" %}</a>
-                                <a href="#">{% trans "Namib Desert" %}</a>
-                                <a href="#">{% trans "Wadi Rum" %}</a>
-                                <a href="#">{% trans "Atacama Desert" %}</a>
-                                <a href="#">{% trans "Arabian Desert" %}</a>
-                                <a href="#">{% trans "Gobi Desert" %}</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 animate-on-scroll">
-                            <h4 class="mb-4">
-                                {% trans "Newsletter" %}
-                            </h4>
-                            <p>
-                                {% trans "Subscribe for exclusive offers and desert travel tips." %}
-                            </p>
-                            <form class="mt-3">
-                                <div class="input-group mb-3">
-                                    <input type="email"
-                                           class="form-control"
-                                           placeholder="{% trans 'Your Email' %}" />
-                                    <button class="btn btn-primary" type="submit">
-                                        {% trans "Subscribe" %}
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <hr class="my-5" style="border-color: rgba(255,255,255,0.1);" />
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start">
-                            <p class="mb-0">
-                                {% trans "© 2023 Desert Mirage Safaris. All rights reserved." %}
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-links d-inline">
-                                <a href="#" class="me-3">{% trans "Privacy Policy" %}</a>
-                                <a href="#">{% trans "Terms of Service" %}</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </footer>
         {% endblock footer %}
+        {% block whatsapp %}
+            <!-- WhatsApp Float -->
+            <div class="whatsapp-float">
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        {% endblock whatsapp %}
 
         <!-- Language Switcher -->
         {% block lang %}
@@ -810,5 +647,7 @@
         {% endblock js %}
         {% block extra_js %}
         {% endblock extra_js %}
+
+
     </body>
 </html>
