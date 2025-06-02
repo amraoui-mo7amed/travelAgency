@@ -23,6 +23,12 @@
             "name_en" : "Tassili Ahnet",
             "name_ar" : "تاسيلي أحنات",
             "image_path" : "images/destinations/Tassili_Ahnet.jpeg"
+        },
+        {
+            "name_fr": "Tassili immidir",
+            "name_en": "Tassili immidir",
+            "name_ar": "تاسيلي إمدير",
+            "image_path" : "images/destinations/TASSILI_IMMIDIRE.jpeg"
         }
     ], 
     "food" : [

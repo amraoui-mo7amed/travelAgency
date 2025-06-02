@@ -217,8 +217,11 @@ h4 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(58, 44, 42, 0.7), rgba(58, 44, 42, 0.7)),
-        url('https://images.unsplash.com/photo-1518544866330-95a2bec01e0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('/static/images/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
