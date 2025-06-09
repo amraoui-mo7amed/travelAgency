@@ -121,10 +121,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-
-
 // HANDLING FORMS
 document.addEventListener('DOMContentLoaded', function () {
     // Get all forms with class .form

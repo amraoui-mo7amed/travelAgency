@@ -9,7 +9,7 @@
         <meta charset="UTF-8" />
         <link rel="shortcut icon" href="{% static "images/favicon.jpeg" %}" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{% trans "Timidoua Travel | " %}
+        <title>Timidoua Travel 
             {% block subtitle %}
                 {% trans "Luxury Desert Adventures" %}
             {% endblock subtitle %}
@@ -68,7 +68,7 @@
                     </button>
                     <!-- Collapsible Menu -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#home">{% trans "Home" %}</a>
                             </li>
@@ -79,16 +79,13 @@
                                 <a class="nav-link" href="#destinations">{% trans "Destinations" %}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#meals">{% trans "Meals" %}</a>
+                                <a class="nav-link" href="#gallery">{% trans "Gallery" %}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#art">{% trans "Art" %}</a>
+                                <a class="nav-link" href="#how-it-works">{% trans "How It Works" %}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#animals">{% trans "Animals" %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#clients">{% trans "Clients" %}</a>
+                                <a class="nav-link" href="#book-now">{% trans "Book Now" %}</a>
                             </li>
                             {% comment %} <li class="nav-item">
                                 <a class="nav-link" href="{% url "user_auth:login" %}">{% trans "Login" %}</a>
@@ -119,472 +116,364 @@
             </section>
         {% endblock hero %}
 
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-lg-6 animate-on-scroll">
+                        <h2 class="section-title mb-4">
+                            {% trans "Our Story" %}
+                        </h2>
+                        <p class="mb-4">
+                            {% trans "Founded in 2010, Timidoua Travel has been creating extraordinary desert experiences for over a decade. Our team of local experts knows the hidden gems of the world's most stunning deserts." %}
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h5 class="mb-0">
+                                            {% trans "Award Winning" %}
+                                        </h5>
+                                        <p class="mb-0">
+                                            {% trans "5-time 'Best Safari' winner" %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h5 class="mb-0">
+                                            {% trans "Expert Guides" %}
+                                        </h5>
+                                        <p class="mb-0">
+                                            {% trans "Local knowledge, global standards" %}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <img src="https://plus.unsplash.com/premium_photo-1726863229625-6e3eda258d03?q=80&w=1454&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-100 rounded"
+                             alt="{% trans "About us image" %}" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us" id="why-us">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                        <h2 class="section-title mb-4">
+                            {% trans "Why Choose" %} Timidoua Travel?
+                        </h2>
+                        <p>
+                            {% trans "We go beyond the ordinary to deliver extraordinary desert experiences you'll cherish forever." %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                        <div class="feature-box">
+                            <i class="fas fa-map-marked-alt feature-icon mb-3"></i>
+                            <h4>
+                                {% trans "Exclusive Locations" %}
+                            </h4>
+                            <p>
+                                {% trans "Access to private desert camps and hidden oases unavailable to most travelers." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                        <div class="feature-box">
+                            <i class="fas fa-hotel feature-icon mb-3"></i>
+                            <h4>
+                                {% trans "Luxury Accommodations" %}
+                            </h4>
+                            <p>
+                                {% trans "Spend your nights in luxurious tents with all modern amenities under the stars." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                        <div class="feature-box">
+                            <i class="fas fa-compass feature-icon mb-3"></i>
+                            <h4>
+                                {% trans "Expert Guides" %}
+                            </h4>
+                            <p>
+                                {% trans "Our guides have 10+ years experience and deep knowledge of desert ecosystems." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
+                        <div class="feature-box">
+                            <i class="fas fa-leaf feature-icon mb-3"></i>
+                            <h4>
+                                {% trans "Sustainable Travel" %}
+                            </h4>
+                            <p>
+                                {% trans "We're committed to eco-friendly practices that protect these fragile environments." %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                        <h2 class="section-title mb-4">{% trans "How It Works" %}</h2>
+                        <p class="mb-5">{% trans "Simple steps to your perfect desert adventure" %}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Step 1 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>{% trans "Choose Your Adventure" %}</h3>
+                            <p>{% trans "Browse our curated desert experiences and select your preferred package." %}</p>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>{% trans "Book Online" %}</h3>
+                            <p>{% trans "Secure your spot with our easy online booking system." %}</p>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>{% trans "Get Ready" %}</h3>
+                            <p>{% trans "Receive confirmation and preparation guide for your trip." %}</p>
+                            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h3>{% trans "Enjoy Your Trip" %}</h3>
+                            <p>{% trans "Experience the magic of the desert with our expert guides." %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="destinations" id="destinations">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                        <h2 class="section-title mb-4">
+                            {% trans "Our Featured Destinations" %}
+                        </h2>
+                        <p>
+                            {% trans "Explore the world's most magnificent deserts with our expertly crafted itineraries." %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for destination in destinations %}
+                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                            <div class="destination-card">
+                                <img src="{% static destination.image_path %}"
+                                     {% if LANGUAGE_CODE == 'ar' %} alt="{{ destination.name_ar }}" {% elif LANGUAGE_CODE == 'fr' %} alt="{{ destination.name_fr }}" {% else %} alt="{{ destination.name_en }}" {% endif %}
+                                     class="destination-img" />
+                                <div class="destination-overlay">
+                                    <h4>
+                                        {% if LANGUAGE_CODE == 'ar' %}
+                                            {{ destination.name_ar }}
+                                        {% elif LANGUAGE_CODE == 'fr' %}
+                                            {{ destination.name_fr }}
+                                        {% else %}
+                                            {{ destination.name_en }}
+                                        {% endif %}
+
+                                    </h4>
+                                    {% comment %} <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a> {% endcomment %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                {% comment %} <div class="text-center mt-4 animate-on-scroll">
+                    <a href="#" class="btn btn-primary">{% trans "View All Destinations" %}</a>
+                </div> {% endcomment %}
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5 animate-on-scroll">
+                        <h2 class="section-title mb-4">
+                            {% trans "Our Gallery" %}
+                        </h2>
+                        <p>
+                            {% trans "Explore our collection of desert experiences" %}
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Navigation -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <ul class="gallery-nav nav nav-pills justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="pill" href="#meals-tab">{% trans "Meals" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#art-tab">{% trans "Art" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#animals-tab">{% trans "Wildlife" %}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#clients-tab">{% trans "Clients" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Gallery Content -->
+                <div class="tab-content">
+                    <!-- Meals Tab -->
+                    <div class="tab-pane fade show active" id="meals-tab">
+                        <div class="row">
+                            {% for item in food %}
+                                <div class="col-md-4 col-lg-3 mb-4 animate-on-scroll">
+                                    <div class="gallery-item">
+                                        <img src="{% static item.image_path %}" 
+                                             alt="{% trans item.name %}"
+                                             class="gallery-img" />
+                                        <div class="gallery-caption">
+                                            <h5>{% trans item.name %}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <!-- Art Tab -->
+                    <div class="tab-pane fade" id="art-tab">
+                        <div class="row">
+                            {% for item in art %}
+                                <div class="col-md-4 col-lg-3 mb-4 animate-on-scroll">
+                                    <div class="gallery-item">
+                                        <img src="{% static item.image_path %}" 
+                                             alt="{% trans 'art picture' %}"
+                                             class="gallery-img" />
+                                        <div class="gallery-caption">
+                                            <h5>{% trans item.name %}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <!-- Animals Tab -->
+                    <div class="tab-pane fade" id="animals-tab">
+                        <div class="row">
+                            {% for animal in animals %}
+                                <div class="col-md-4 col-lg-3 mb-4 animate-on-scroll">
+                                    <div class="gallery-item">
+                                        <img src="{% static animal.image_path %}" 
+                                             alt="{% trans animal.name %}"
+                                             class="gallery-img" />
+                                        <div class="gallery-caption">
+                                            <h5>{% trans animal.name %}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <!-- Clients Tab -->
+                    <div class="tab-pane fade" id="clients-tab">
+                        <div class="row">
+                            {% for client in clients %}
+                                <div class="col-md-4 col-lg-3 mb-4 animate-on-scroll">
+                                    <div class="gallery-item">
+                                        <img src="{% static client.image_path %}" 
+                                             alt="{% trans 'client picture' %}"
+                                             class="gallery-img" />
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Now Section -->
+        <section class="book-now" id="book-now" >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center text-white mb-5">
+                        <h2 class="mb-4">{% trans "Ready for Your Adventure?" %}</h2>
+                        <p class="mb-5 lead">{% trans "Fill out the form below to book your desert experience" %}</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="booking-form" method="post" action="#">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="full_name" placeholder="{% trans 'Full Name' %}" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" name="email" placeholder="{% trans 'Email Address' %}" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" name="phone" placeholder="{% trans 'Phone Number' %}" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control" name="travel_date" placeholder="{% trans 'Travel Date' %}" required>
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select" name="package" required>
+                                        <option value="" disabled selected>{% trans 'Select Package' %}</option>
+                                        <option value="weekend">{% trans 'Weekend Desert Escape' %}</option>
+                                        <option value="week">{% trans '7-Day Desert Expedition' %}</option>
+                                        <option value="custom">{% trans 'Custom Experience' %}</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">{% trans "Submit Booking" %}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {% block content %}
-            <!-- About Section -->
-            <section class="about" id="about">
-                <div class="container">
-                    <div class="row align-items-start">
-                        <div class="col-lg-6 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Our Story" %}
-                            </h2>
-                            <p class="mb-4">
-                                {% trans "Founded in 2010, Desert Mirage Safaris has been creating extraordinary desert experiences for over a decade. Our team of local experts knows the hidden gems of the world's most stunning deserts." %}
-                            </p>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <h5 class="mb-0">
-                                                {% trans "Award Winning" %}
-                                            </h5>
-                                            <p class="mb-0">
-                                                {% trans "5-time 'Best Safari' winner" %}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <h5 class="mb-0">
-                                                {% trans "Expert Guides" %}
-                                            </h5>
-                                            <p class="mb-0">
-                                                {% trans "Local knowledge, global standards" %}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3">
-                            <img src="https://plus.unsplash.com/premium_photo-1726863229625-6e3eda258d03?q=80&w=1454&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                 class="w-100 rounded"
-                                 alt="{% trans "About us image" %}" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Why Choose Us Section -->
-            <section class="why-us" id="why-us">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Why Choose Desert Mirage?" %}
-                            </h2>
-                            <p class="mb-0">
-                                {% trans "We go beyond the ordinary to deliver extraordinary desert experiences you'll cherish forever." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="feature-box">
-                                <i class="fas fa-map-marked-alt feature-icon mb-3"></i>
-                                <h4>
-                                    {% trans "Exclusive Locations" %}
-                                </h4>
-                                <p>
-                                    {% trans "Access to private desert camps and hidden oases unavailable to most travelers." %}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="feature-box">
-                                <i class="fas fa-hotel feature-icon mb-3"></i>
-                                <h4>
-                                    {% trans "Luxury Accommodations" %}
-                                </h4>
-                                <p>
-                                    {% trans "Spend your nights in luxurious tents with all modern amenities under the stars." %}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="feature-box">
-                                <i class="fas fa-compass feature-icon mb-3"></i>
-                                <h4>
-                                    {% trans "Expert Guides" %}
-                                </h4>
-                                <p>
-                                    {% trans "Our guides have 10+ years experience and deep knowledge of desert ecosystems." %}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                            <div class="feature-box">
-                                <i class="fas fa-leaf feature-icon mb-3"></i>
-                                <h4>
-                                    {% trans "Sustainable Travel" %}
-                                </h4>
-                                <p>
-                                    {% trans "We're committed to eco-friendly practices that protect these fragile environments." %}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Destinations Section -->
-            <section class="destinations" id="destinations">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Our Featured Destinations" %}
-                            </h2>
-                            <p>
-                                {% trans "Explore the world's most magnificent deserts with our expertly crafted itineraries." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        {% for destination in destinations %}
-                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                                <div class="destination-card">
-                                    <img src="{% static destination.image_path %}"
-                                         {% if LANGUAGE_CODE == 'ar' %} alt="{{ destination.name_ar }}" {% elif LANGUAGE_CODE == 'fr' %} alt="{{ destination.name_fr }}" {% else %} alt="{{ destination.name_en }}" {% endif %}
-                                         class="destination-img" />
-                                    <div class="destination-overlay">
-                                        <h4>
-                                            {% if LANGUAGE_CODE == 'ar' %}
-                                                {{ destination.name_ar }}
-                                            {% elif LANGUAGE_CODE == 'fr' %}
-                                                {{ destination.name_fr }}
-                                            {% else %}
-                                                {{ destination.name_en }}
-                                            {% endif %}
-
-                                        </h4>
-                                        {% comment %} <a href="#" class="btn btn-sm btn-primary">{% trans "Explore" %}</a> {% endcomment %}
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-
-                    </div>
-                    {% comment %} <div class="text-center mt-4 animate-on-scroll">
-                        <a href="#" class="btn btn-primary">{% trans "View All Destinations" %}</a>
-                    </div> {% endcomment %}
-                </div>
-            </section>
-
-            <!-- Meals Section -->
-            <section class="meals" id="meals">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Our Meals" %}
-                            </h2>
-                            <p>
-                                {% trans "Indulge in authentic desert cuisine prepared by our expert chefs using traditional methods." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        {% for item in food %}
-                            <div class="col-md-4 col-lg-4 mb-4 animate-on-scroll">
-                                <div class="meal-card h-100">
-                                    <img src="{% static item.image_path %}" class="img-fluid meal-img" />
-                                    {% comment %} <div class="p-4">
-                                        <h4>
-                                            {% trans "Bedouin Feast" %}
-                                        </h4>
-                                        <p>
-                                            {% trans "Traditional meal cooked in underground ovens with lamb, rice and spices." %}
-                                        </p>
-                                    </div> {% endcomment %}
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
-
-            <!-- Art section -->
-            <section class="art" id="art">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Desert Art" %}
-                            </h2>
-                            <p>
-                                {% trans "Discover the amazing art of our ancesstors " %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        {% for item in art %}
-                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                                <div class="art-card">
-                                    <img src="{% static item.image_path %}"
-                                         alt="{% trans 'art picture' %}"
-                                         class="art-img" />
-                                    {% comment %} <div class="p-4">
-                                                    <h4>
-                                                        {% trans "Fennec Fox" %}
-                                                    </h4>
-                                                    <p>
-                                                        {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
-                                                    </p>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
-                                    </div> {% endcomment %}
-                                </div>
-                            </div>
-                        {% endfor %}
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Animals Section -->
-            <section class="animals" id="animals">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Desert Wildlife" %}
-                            </h2>
-                            <p>
-                                {% trans "Meet the incredible creatures that call these harsh yet beautiful landscapes home." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        {% for animal in animals %}
-                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                                <div class="animal-card">
-                                    <img src="{% static animal.image_path %}"
-                                         alt="{% trans 'animal pictrue' %}"
-                                         class="animal-img" />
-                                    {% comment %} <div class="p-4">
-                                        <h4>
-                                            {% trans "Fennec Fox" %}
-                                        </h4>
-                                        <p>
-                                            {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
-                                        </p>
-                                        <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
-                                    </div> {% endcomment %}
-                                </div>
-                            </div>
-                        {% endfor %}
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Clients Section -->
-            <section class="clients" id="clients">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Our Clients" %}
-                            </h2>
-                            <p>
-                                {% trans "Enjoy our with clients gallery ." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        {% for client in clients %}
-                            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                                <div class="client-card">
-                                    <img src="{% static client.image_path %}"
-                                         alt="{% trans 'client pictrue' %}"
-                                         class="client-img" />
-                                    {% comment %} <div class="p-4">
-                                        <h4>
-                                            {% trans "Fennec Fox" %}
-                                        </h4>
-                                        <p>
-                                            {% trans "The smallest fox species with distinctive large ears that help dissipate heat." %}
-                                        </p>
-                                        <a href="#" class="btn btn-sm btn-outline-primary">{% trans "Learn More" %}</a>
-                                    </div> {% endcomment %}
-                                </div>
-                            </div>
-                        {% endfor %}
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Testimonials Section -->
-            {% comment %} <section class="testimonials" id="testimonials">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "What Our Travelers Say" %}
-                            </h2>
-                            <p>
-                                {% trans "Don't just take our word for it - hear from our adventurous guests." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 animate-on-scroll">
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-card">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
-                                    </div>
-                                    <div class="d-flex-flex-column">
-                                        <h5 class="mb-1">
-                                            {% trans "Sarah J." %}
-                                        </h5>
-                                        <p>
-                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-card">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
-                                    </div>
-                                    <div class="d-flex-flex-column">
-                                        <h5 class="mb-1">
-                                            {% trans "Sarah J." %}
-                                        </h5>
-                                        <p>
-                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-card">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
-                                    </div>
-                                    <div class="d-flex-flex-column">
-                                        <h5 class="mb-1">
-                                            {% trans "Sarah J." %}
-                                        </h5>
-                                        <p>
-                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-card">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="{% trans 'Sarah J.' %}" class="testimonial-img me-3" />
-                                    </div>
-                                    <div class="d-flex-flex-column">
-                                        <h5 class="mb-1">
-                                            {% trans "Sarah J." %}
-                                        </h5>
-                                        <p>
-                                            {% trans "The Sahara experience was beyond anything I imagined. The luxury camp was exquisite, and our guide Mohamed knew every secret of the desert. Waking up to sunrise over the dunes is something I'll never forget." %}
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> {% endcomment %}
-
-            <!-- Contact Section -->
-            {% comment %} <section class="contact" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mb-5 animate-on-scroll">
-                            <h2 class="section-title mb-4">
-                                {% trans "Ready for Your Adventure?" %}
-                            </h2>
-                            <p>
-                                {% trans "Contact us to start planning your personalized desert experience." %}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 animate-on-scroll">
-                            <div class="contact-form">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <input type="text"
-                                                   class="form-control"
-                                                   placeholder="{% trans 'Your Name' %}"
-                                                   required />
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="email"
-                                                   class="form-control"
-                                                   placeholder="{% trans 'Your Email' %}"
-                                                   required />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <input type="tel"
-                                                   class="form-control"
-                                                   placeholder="{% trans 'Phone Number' %}" />
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <select class="form-select">
-                                                <option selected>
-                                                    {% trans "Select Destination" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Sahara Desert" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Namib Desert" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Wadi Rum" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Atacama Desert" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Arabian Desert" %}
-                                                </option>
-                                                <option>
-                                                    {% trans "Gobi Desert" %}
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <textarea class="form-control"
-                                                  rows="5"
-                                                  placeholder="{% trans 'Your Message' %}"></textarea>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-submit">
-                                            {% trans "Send Message" %}
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="contact-info text-center">
-                                <div class="d-inline-block me-4 mb-3 mb-md-0">
-                                    <i class="fas fa-phone-alt contact-icon"></i>
-                                    <span>{% trans "+1 (555) 123-4567" %}</span>
-                                </div>
-                                <div class="d-inline-block me-4 mb-3 mb-md-0">
-                                    <i class="fas fa-envelope contact-icon"></i>
-                                    <span>{% trans "info@desertmirage.com" %}</span>
-                                </div>
-                                <div class="d-inline-block">
-                                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                                    <span>{% trans "123 Dune Rd, Sedona, AZ" %}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> {% endcomment %}
         {% endblock content %}
 
         <!-- Footer -->
@@ -594,8 +483,8 @@
                     {% comment %} <hr class="my-5" style="border-color: rgba(255,255,255,0.1);" /> {% endcomment %}
                     <div class="row">
                         <div class="col-md-12 text-center text-md-start">
-                            <p class="mb-0 text-center">
-                                {% trans "© 2025 Timidoua Voyage . All rights reserved." %}
+                            <p class="mb-0 text-center"> 2025 Timidoua travel
+                                {% trans " . All rights reserved." %}
                             </p>
                         </div>
                     </div>
@@ -642,7 +531,7 @@
         <!-- Owl Carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <!-- Custom JS -->
-        <script src="{% static 'js/index.js' %}"></script>
+        <script src="{% static 'js/index.js' %}?v={% now "U" %}"></script>
 
         {% block js %}
         {% endblock js %}
